@@ -42,6 +42,12 @@
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.panel13 = new System.Windows.Forms.Panel();
             this.btnload = new cardeal.RJButton();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.yearDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.monthDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.valueDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.revenueBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cartesianChart1 = new LiveCharts.WinForms.CartesianChart();
             this.label1 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -50,20 +56,14 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label28 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
-            this.cartesianChart1 = new LiveCharts.WinForms.CartesianChart();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.revenueBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.yearDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.monthDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.valueDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelhome.SuspendLayout();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel6.SuspendLayout();
             this.panel13.SuspendLayout();
-            this.panel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.revenueBindingSource)).BeginInit();
+            this.panel12.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelhome
@@ -207,6 +207,59 @@
             this.btnload.UseVisualStyleBackColor = false;
             this.btnload.Click += new System.EventHandler(this.btnload_Click);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.yearDataGridViewTextBoxColumn,
+            this.monthDataGridViewTextBoxColumn,
+            this.valueDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.revenueBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(779, 76);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(569, 342);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // yearDataGridViewTextBoxColumn
+            // 
+            this.yearDataGridViewTextBoxColumn.DataPropertyName = "Year";
+            this.yearDataGridViewTextBoxColumn.HeaderText = "Year";
+            this.yearDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.yearDataGridViewTextBoxColumn.Name = "yearDataGridViewTextBoxColumn";
+            this.yearDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // monthDataGridViewTextBoxColumn
+            // 
+            this.monthDataGridViewTextBoxColumn.DataPropertyName = "Month";
+            this.monthDataGridViewTextBoxColumn.HeaderText = "Month";
+            this.monthDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.monthDataGridViewTextBoxColumn.Name = "monthDataGridViewTextBoxColumn";
+            this.monthDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // valueDataGridViewTextBoxColumn
+            // 
+            this.valueDataGridViewTextBoxColumn.DataPropertyName = "Value";
+            this.valueDataGridViewTextBoxColumn.HeaderText = "Value";
+            this.valueDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.valueDataGridViewTextBoxColumn.Name = "valueDataGridViewTextBoxColumn";
+            this.valueDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // revenueBindingSource
+            // 
+            this.revenueBindingSource.DataSource = typeof(cardeal.Revenue);
+            // 
+            // cartesianChart1
+            // 
+            this.cartesianChart1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cartesianChart1.Location = new System.Drawing.Point(34, 76);
+            this.cartesianChart1.Name = "cartesianChart1";
+            this.cartesianChart1.Size = new System.Drawing.Size(707, 369);
+            this.cartesianChart1.TabIndex = 0;
+            this.cartesianChart1.Text = "cartesianChart1";
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -287,59 +340,6 @@
             this.label27.TabIndex = 8;
             this.label27.Text = "Sign in";
             // 
-            // cartesianChart1
-            // 
-            this.cartesianChart1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cartesianChart1.Location = new System.Drawing.Point(34, 76);
-            this.cartesianChart1.Name = "cartesianChart1";
-            this.cartesianChart1.Size = new System.Drawing.Size(861, 369);
-            this.cartesianChart1.TabIndex = 0;
-            this.cartesianChart1.Text = "cartesianChart1";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.yearDataGridViewTextBoxColumn,
-            this.monthDataGridViewTextBoxColumn,
-            this.valueDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.revenueBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(920, 76);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(428, 342);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // revenueBindingSource
-            // 
-            this.revenueBindingSource.DataSource = typeof(cardeal.Revenue);
-            // 
-            // yearDataGridViewTextBoxColumn
-            // 
-            this.yearDataGridViewTextBoxColumn.DataPropertyName = "Year";
-            this.yearDataGridViewTextBoxColumn.HeaderText = "Year";
-            this.yearDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.yearDataGridViewTextBoxColumn.Name = "yearDataGridViewTextBoxColumn";
-            this.yearDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // monthDataGridViewTextBoxColumn
-            // 
-            this.monthDataGridViewTextBoxColumn.DataPropertyName = "Month";
-            this.monthDataGridViewTextBoxColumn.HeaderText = "Month";
-            this.monthDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.monthDataGridViewTextBoxColumn.Name = "monthDataGridViewTextBoxColumn";
-            this.monthDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // valueDataGridViewTextBoxColumn
-            // 
-            this.valueDataGridViewTextBoxColumn.DataPropertyName = "Value";
-            this.valueDataGridViewTextBoxColumn.HeaderText = "Value";
-            this.valueDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.valueDataGridViewTextBoxColumn.Name = "valueDataGridViewTextBoxColumn";
-            this.valueDataGridViewTextBoxColumn.Width = 125;
-            // 
             // Agent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -357,10 +357,10 @@
             this.panel6.ResumeLayout(false);
             this.panel13.ResumeLayout(false);
             this.panel13.PerformLayout();
-            this.panel12.ResumeLayout(false);
-            this.panel12.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.revenueBindingSource)).EndInit();
+            this.panel12.ResumeLayout(false);
+            this.panel12.PerformLayout();
             this.ResumeLayout(false);
 
         }

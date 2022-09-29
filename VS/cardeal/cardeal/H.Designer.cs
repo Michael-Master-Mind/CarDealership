@@ -547,7 +547,7 @@
             // 
             // panel12
             // 
-            this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.panel12.Controls.Add(this.label28);
             this.panel12.Controls.Add(this.label27);
             this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
