@@ -61,6 +61,12 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddCars.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCars.Designer.cs">
+      <DependentUpon>AddCars.cs</DependentUpon>
+    </Compile>
     <Compile Include="Agent.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,12 +91,29 @@
     <Compile Include="Newacc.Designer.cs">
       <DependentUpon>Newacc.cs</DependentUpon>
     </Compile>
-    <Compile Include="Revenue.cs" />
+    <Compile Include="RemoveCars.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoveCars.Designer.cs">
+      <DependentUpon>RemoveCars.cs</DependentUpon>
+    </Compile>
     <Compile Include="Sell.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Sell.Designer.cs">
       <DependentUpon>Sell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SellerInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SellerInfo.Designer.cs">
+      <DependentUpon>SellerInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sellers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sellers.Designer.cs">
+      <DependentUpon>Sellers.cs</DependentUpon>
     </Compile>
     <Compile Include="settings.cs">
       <SubType>Form</SubType>
@@ -121,6 +144,9 @@
     <Compile Include="signin.Designer.cs">
       <DependentUpon>signin.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddCars.resx">
+      <DependentUpon>AddCars.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Agent.resx">
       <DependentUpon>Agent.cs</DependentUpon>
     </EmbeddedResource>
@@ -133,8 +159,17 @@
     <EmbeddedResource Include="Newacc.resx">
       <DependentUpon>Newacc.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="RemoveCars.resx">
+      <DependentUpon>RemoveCars.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Sell.resx">
       <DependentUpon>Sell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SellerInfo.resx">
+      <DependentUpon>SellerInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sellers.resx">
+      <DependentUpon>Sellers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="settings.resx">
       <DependentUpon>settings.cs</DependentUpon>
