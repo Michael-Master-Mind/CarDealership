@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Sell));
             this.panelhome = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label30 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
@@ -53,13 +52,13 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.rjButton1 = new cardeal.RJButton();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.btnSubmit = new cardeal.RJButton();
+            this.txtMessage = new System.Windows.Forms.RichTextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtPhone = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -71,19 +70,20 @@
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label29 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
             this.label28 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.label29 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelhome.SuspendLayout();
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
@@ -94,9 +94,9 @@
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelhome
@@ -117,13 +117,6 @@
             this.panelhome.Name = "panelhome";
             this.panelhome.Size = new System.Drawing.Size(1756, 1054);
             this.panelhome.TabIndex = 10;
-            // 
-            // panel9
-            // 
-            this.panel9.Location = new System.Drawing.Point(0, 1147);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(1714, 162);
-            this.panel9.TabIndex = 29;
             // 
             // panel8
             // 
@@ -372,13 +365,13 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.panel7.Controls.Add(this.rjButton1);
-            this.panel7.Controls.Add(this.richTextBox1);
-            this.panel7.Controls.Add(this.textBox4);
+            this.panel7.Controls.Add(this.btnSubmit);
+            this.panel7.Controls.Add(this.txtMessage);
+            this.panel7.Controls.Add(this.txtEmail);
             this.panel7.Controls.Add(this.label8);
             this.panel7.Controls.Add(this.label9);
-            this.panel7.Controls.Add(this.textBox5);
-            this.panel7.Controls.Add(this.textBox6);
+            this.panel7.Controls.Add(this.txtPhone);
+            this.panel7.Controls.Add(this.txtName);
             this.panel7.Controls.Add(this.label10);
             this.panel7.Controls.Add(this.label11);
             this.panel7.Location = new System.Drawing.Point(49, 91);
@@ -386,39 +379,40 @@
             this.panel7.Size = new System.Drawing.Size(714, 646);
             this.panel7.TabIndex = 1;
             // 
-            // rjButton1
+            // btnSubmit
             // 
-            this.rjButton1.BackColor = System.Drawing.Color.Black;
-            this.rjButton1.BackgroundColor = System.Drawing.Color.Black;
-            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton1.BorderRadius = 15;
-            this.rjButton1.BorderSize = 0;
-            this.rjButton1.FlatAppearance.BorderSize = 0;
-            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.Font = new System.Drawing.Font("Segoe UI Black", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rjButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.rjButton1.Location = new System.Drawing.Point(177, 570);
-            this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(341, 57);
-            this.rjButton1.TabIndex = 31;
-            this.rjButton1.Text = "CONTACT";
-            this.rjButton1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.rjButton1.UseVisualStyleBackColor = false;
+            this.btnSubmit.BackColor = System.Drawing.Color.Black;
+            this.btnSubmit.BackgroundColor = System.Drawing.Color.Black;
+            this.btnSubmit.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnSubmit.BorderRadius = 15;
+            this.btnSubmit.BorderSize = 0;
+            this.btnSubmit.FlatAppearance.BorderSize = 0;
+            this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSubmit.Font = new System.Drawing.Font("Segoe UI Black", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSubmit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnSubmit.Location = new System.Drawing.Point(177, 570);
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.Size = new System.Drawing.Size(341, 57);
+            this.btnSubmit.TabIndex = 31;
+            this.btnSubmit.Text = "SUBMIT";
+            this.btnSubmit.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnSubmit.UseVisualStyleBackColor = false;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
-            // richTextBox1
+            // txtMessage
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(157, 319);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(374, 229);
-            this.richTextBox1.TabIndex = 30;
-            this.richTextBox1.Text = "";
+            this.txtMessage.Location = new System.Drawing.Point(157, 319);
+            this.txtMessage.Name = "txtMessage";
+            this.txtMessage.Size = new System.Drawing.Size(374, 229);
+            this.txtMessage.TabIndex = 30;
+            this.txtMessage.Text = "";
             // 
-            // textBox4
+            // txtEmail
             // 
-            this.textBox4.Location = new System.Drawing.Point(156, 239);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(374, 22);
-            this.textBox4.TabIndex = 28;
+            this.txtEmail.Location = new System.Drawing.Point(156, 239);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(374, 22);
+            this.txtEmail.TabIndex = 28;
             // 
             // label8
             // 
@@ -442,19 +436,19 @@
             this.label9.TabIndex = 26;
             this.label9.Text = "Email";
             // 
-            // textBox5
+            // txtPhone
             // 
-            this.textBox5.Location = new System.Drawing.Point(157, 166);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(374, 22);
-            this.textBox5.TabIndex = 25;
+            this.txtPhone.Location = new System.Drawing.Point(157, 166);
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.Size = new System.Drawing.Size(374, 22);
+            this.txtPhone.TabIndex = 25;
             // 
-            // textBox6
+            // txtName
             // 
-            this.textBox6.Location = new System.Drawing.Point(157, 94);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(374, 22);
-            this.textBox6.TabIndex = 24;
+            this.txtName.Location = new System.Drawing.Point(157, 94);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(374, 22);
+            this.txtName.TabIndex = 24;
             // 
             // label10
             // 
@@ -532,7 +526,7 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(397, 139);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(156, 60);
+            this.label4.Size = new System.Drawing.Size(153, 59);
             this.label4.TabIndex = 27;
             this.label4.Text = "NAME";
             // 
@@ -543,7 +537,7 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(44, 139);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(368, 60);
+            this.label3.Size = new System.Drawing.Size(361, 59);
             this.label3.TabIndex = 26;
             this.label3.Text = "CAR AGENTS IN ";
             // 
@@ -574,16 +568,6 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 30;
             this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(337, 51);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(41, 34);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 28;
-            this.pictureBox1.TabStop = false;
             // 
             // comboBox2
             // 
@@ -632,25 +616,6 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(302, 30);
             this.textBox2.TabIndex = 24;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(29, 56);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(302, 30);
-            this.textBox1.TabIndex = 0;
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.ForeColor = System.Drawing.Color.White;
-            this.label29.Location = new System.Drawing.Point(22, 15);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(154, 38);
-            this.label29.TabIndex = 23;
-            this.label29.Text = "LOCATION";
             // 
             // label5
             // 
@@ -707,6 +672,42 @@
             this.pictureBox3.TabIndex = 105;
             this.pictureBox3.TabStop = false;
             // 
+            // panel9
+            // 
+            this.panel9.Location = new System.Drawing.Point(0, 1147);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(1714, 162);
+            this.panel9.TabIndex = 29;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.ForeColor = System.Drawing.Color.White;
+            this.label29.Location = new System.Drawing.Point(22, 15);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(154, 38);
+            this.label29.TabIndex = 23;
+            this.label29.Text = "LOCATION";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(29, 56);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(302, 30);
+            this.textBox1.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(337, 51);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(41, 34);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 28;
+            this.pictureBox1.TabStop = false;
+            // 
             // Sell
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -732,10 +733,10 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -766,13 +767,13 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel7;
-        private RJButton rjButton1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.TextBox textBox4;
+        private RJButton btnSubmit;
+        private System.Windows.Forms.RichTextBox txtMessage;
+        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtPhone;
+        private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Panel panel2;
@@ -784,18 +785,18 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label29;
     }
 }

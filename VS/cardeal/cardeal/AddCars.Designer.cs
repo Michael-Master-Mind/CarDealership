@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             this.panel6 = new System.Windows.Forms.Panel();
-            this.btnAdd = new cardeal.RJButton();
-            this.txrManufacturer = new System.Windows.Forms.TextBox();
-            this.txtModel = new System.Windows.Forms.TextBox();
-            this.txtManufacturer = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtKilometer = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtPrice = new System.Windows.Forms.TextBox();
             this.txtYear = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtKilometer = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btnAdd = new cardeal.RJButton();
+            this.txtManufacturer = new System.Windows.Forms.Label();
+            this.txrManufacturer = new System.Windows.Forms.TextBox();
+            this.txtModel = new System.Windows.Forms.TextBox();
             this.panel6.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -54,61 +54,6 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(1429, 796);
             this.panel6.TabIndex = 29;
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnAdd.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnAdd.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnAdd.BorderRadius = 20;
-            this.btnAdd.BorderSize = 0;
-            this.btnAdd.FlatAppearance.BorderSize = 0;
-            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdd.Font = new System.Drawing.Font("Cooper Black", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(149, 470);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(459, 61);
-            this.btnAdd.TabIndex = 24;
-            this.btnAdd.Text = "Add";
-            this.btnAdd.TextColor = System.Drawing.Color.White;
-            this.btnAdd.UseVisualStyleBackColor = false;
-            // 
-            // txrManufacturer
-            // 
-            this.txrManufacturer.Location = new System.Drawing.Point(186, 159);
-            this.txrManufacturer.Name = "txrManufacturer";
-            this.txrManufacturer.Size = new System.Drawing.Size(374, 22);
-            this.txrManufacturer.TabIndex = 23;
-            // 
-            // txtModel
-            // 
-            this.txtModel.Location = new System.Drawing.Point(186, 80);
-            this.txtModel.Name = "txtModel";
-            this.txtModel.Size = new System.Drawing.Size(374, 22);
-            this.txtModel.TabIndex = 22;
-            // 
-            // txtManufacturer
-            // 
-            this.txtManufacturer.AutoSize = true;
-            this.txtManufacturer.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtManufacturer.ForeColor = System.Drawing.Color.White;
-            this.txtManufacturer.Location = new System.Drawing.Point(182, 133);
-            this.txtManufacturer.Name = "txtManufacturer";
-            this.txtManufacturer.Size = new System.Drawing.Size(152, 23);
-            this.txtManufacturer.TabIndex = 21;
-            this.txtManufacturer.Text = "Manufacturer";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(182, 54);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 23);
-            this.label3.TabIndex = 20;
-            this.label3.Text = "Model";
             // 
             // panel1
             // 
@@ -128,6 +73,24 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(767, 605);
             this.panel1.TabIndex = 25;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(179, 364);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(114, 23);
+            this.label4.TabIndex = 29;
+            this.label4.Text = "Kilometer";
+            // 
+            // txtKilometer
+            // 
+            this.txtKilometer.Location = new System.Drawing.Point(186, 390);
+            this.txtKilometer.Name = "txtKilometer";
+            this.txtKilometer.Size = new System.Drawing.Size(374, 22);
+            this.txtKilometer.TabIndex = 30;
             // 
             // label1
             // 
@@ -165,23 +128,61 @@
             this.txtYear.Size = new System.Drawing.Size(374, 22);
             this.txtYear.TabIndex = 27;
             // 
-            // label4
+            // label3
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(179, 364);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(114, 23);
-            this.label4.TabIndex = 29;
-            this.label4.Text = "Kilometer";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(182, 54);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(71, 23);
+            this.label3.TabIndex = 20;
+            this.label3.Text = "Model";
             // 
-            // txtKilometer
+            // btnAdd
             // 
-            this.txtKilometer.Location = new System.Drawing.Point(186, 390);
-            this.txtKilometer.Name = "txtKilometer";
-            this.txtKilometer.Size = new System.Drawing.Size(374, 22);
-            this.txtKilometer.TabIndex = 30;
+            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnAdd.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnAdd.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnAdd.BorderRadius = 20;
+            this.btnAdd.BorderSize = 0;
+            this.btnAdd.FlatAppearance.BorderSize = 0;
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.Font = new System.Drawing.Font("Cooper Black", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.ForeColor = System.Drawing.Color.White;
+            this.btnAdd.Location = new System.Drawing.Point(149, 470);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(459, 61);
+            this.btnAdd.TabIndex = 24;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.TextColor = System.Drawing.Color.White;
+            this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // txtManufacturer
+            // 
+            this.txtManufacturer.AutoSize = true;
+            this.txtManufacturer.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtManufacturer.ForeColor = System.Drawing.Color.White;
+            this.txtManufacturer.Location = new System.Drawing.Point(182, 133);
+            this.txtManufacturer.Name = "txtManufacturer";
+            this.txtManufacturer.Size = new System.Drawing.Size(152, 23);
+            this.txtManufacturer.TabIndex = 21;
+            this.txtManufacturer.Text = "Manufacturer";
+            // 
+            // txrManufacturer
+            // 
+            this.txrManufacturer.Location = new System.Drawing.Point(186, 159);
+            this.txrManufacturer.Name = "txrManufacturer";
+            this.txrManufacturer.Size = new System.Drawing.Size(374, 22);
+            this.txrManufacturer.TabIndex = 23;
+            // 
+            // txtModel
+            // 
+            this.txtModel.Location = new System.Drawing.Point(186, 80);
+            this.txtModel.Name = "txtModel";
+            this.txtModel.Size = new System.Drawing.Size(374, 22);
+            this.txtModel.TabIndex = 22;
             // 
             // AddCars
             // 
