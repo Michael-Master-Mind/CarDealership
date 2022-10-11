@@ -30,20 +30,14 @@
         {
             this.dgv = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnRefresh = new cardeal.RJButton();
             this.label1 = new System.Windows.Forms.Label();
             this.txtYear = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnRemove = new cardeal.RJButton();
             this.txtManufacturer = new System.Windows.Forms.Label();
             this.txrManufacturer = new System.Windows.Forms.TextBox();
             this.txtModel = new System.Windows.Forms.TextBox();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Model = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Manufacturer = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Year = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Kilometer = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnRefresh = new cardeal.RJButton();
-            this.btnRemove = new cardeal.RJButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -51,18 +45,11 @@
             // dgv
             // 
             this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ID,
-            this.Model,
-            this.Manufacturer,
-            this.Year,
-            this.Price,
-            this.Kilometer});
-            this.dgv.Location = new System.Drawing.Point(259, 12);
+            this.dgv.Location = new System.Drawing.Point(309, 12);
             this.dgv.Name = "dgv";
             this.dgv.RowHeadersWidth = 51;
             this.dgv.RowTemplate.Height = 24;
-            this.dgv.Size = new System.Drawing.Size(936, 354);
+            this.dgv.Size = new System.Drawing.Size(860, 354);
             this.dgv.TabIndex = 0;
             // 
             // panel1
@@ -80,6 +67,26 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(767, 335);
             this.panel1.TabIndex = 26;
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnRefresh.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnRefresh.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnRefresh.BorderRadius = 20;
+            this.btnRefresh.BorderSize = 0;
+            this.btnRefresh.FlatAppearance.BorderSize = 0;
+            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRefresh.Font = new System.Drawing.Font("Cooper Black", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRefresh.ForeColor = System.Drawing.Color.White;
+            this.btnRefresh.Location = new System.Drawing.Point(464, 176);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(257, 61);
+            this.btnRefresh.TabIndex = 28;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.TextColor = System.Drawing.Color.White;
+            this.btnRefresh.UseVisualStyleBackColor = false;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // label1
             // 
@@ -110,6 +117,26 @@
             this.label3.TabIndex = 20;
             this.label3.Text = "Model";
             // 
+            // btnRemove
+            // 
+            this.btnRemove.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnRemove.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnRemove.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnRemove.BorderRadius = 20;
+            this.btnRemove.BorderSize = 0;
+            this.btnRemove.FlatAppearance.BorderSize = 0;
+            this.btnRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRemove.Font = new System.Drawing.Font("Cooper Black", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemove.ForeColor = System.Drawing.Color.White;
+            this.btnRemove.Location = new System.Drawing.Point(464, 103);
+            this.btnRemove.Name = "btnRemove";
+            this.btnRemove.Size = new System.Drawing.Size(257, 61);
+            this.btnRemove.TabIndex = 24;
+            this.btnRemove.Text = "Remove";
+            this.btnRemove.TextColor = System.Drawing.Color.White;
+            this.btnRemove.UseVisualStyleBackColor = false;
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
+            // 
             // txtManufacturer
             // 
             this.txtManufacturer.AutoSize = true;
@@ -134,88 +161,6 @@
             this.txtModel.Name = "txtModel";
             this.txtModel.Size = new System.Drawing.Size(374, 22);
             this.txtModel.TabIndex = 22;
-            // 
-            // ID
-            // 
-            this.ID.HeaderText = "ID";
-            this.ID.MinimumWidth = 6;
-            this.ID.Name = "ID";
-            this.ID.Width = 125;
-            // 
-            // Model
-            // 
-            this.Model.HeaderText = "Model";
-            this.Model.MinimumWidth = 6;
-            this.Model.Name = "Model";
-            this.Model.Width = 125;
-            // 
-            // Manufacturer
-            // 
-            this.Manufacturer.HeaderText = "Manufacturer";
-            this.Manufacturer.MinimumWidth = 6;
-            this.Manufacturer.Name = "Manufacturer";
-            this.Manufacturer.Width = 125;
-            // 
-            // Year
-            // 
-            this.Year.HeaderText = "Year";
-            this.Year.MinimumWidth = 6;
-            this.Year.Name = "Year";
-            this.Year.Width = 125;
-            // 
-            // Price
-            // 
-            this.Price.HeaderText = "Price";
-            this.Price.MinimumWidth = 6;
-            this.Price.Name = "Price";
-            this.Price.Width = 125;
-            // 
-            // Kilometer
-            // 
-            this.Kilometer.HeaderText = "Kilometer";
-            this.Kilometer.MinimumWidth = 6;
-            this.Kilometer.Name = "Kilometer";
-            this.Kilometer.Width = 125;
-            // 
-            // btnRefresh
-            // 
-            this.btnRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnRefresh.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnRefresh.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnRefresh.BorderRadius = 20;
-            this.btnRefresh.BorderSize = 0;
-            this.btnRefresh.FlatAppearance.BorderSize = 0;
-            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRefresh.Font = new System.Drawing.Font("Cooper Black", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRefresh.ForeColor = System.Drawing.Color.White;
-            this.btnRefresh.Location = new System.Drawing.Point(464, 176);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(257, 61);
-            this.btnRefresh.TabIndex = 28;
-            this.btnRefresh.Text = "Refresh";
-            this.btnRefresh.TextColor = System.Drawing.Color.White;
-            this.btnRefresh.UseVisualStyleBackColor = false;
-            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
-            // 
-            // btnRemove
-            // 
-            this.btnRemove.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnRemove.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnRemove.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnRemove.BorderRadius = 20;
-            this.btnRemove.BorderSize = 0;
-            this.btnRemove.FlatAppearance.BorderSize = 0;
-            this.btnRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRemove.Font = new System.Drawing.Font("Cooper Black", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRemove.ForeColor = System.Drawing.Color.White;
-            this.btnRemove.Location = new System.Drawing.Point(464, 103);
-            this.btnRemove.Name = "btnRemove";
-            this.btnRemove.Size = new System.Drawing.Size(257, 61);
-            this.btnRemove.TabIndex = 24;
-            this.btnRemove.Text = "Remove";
-            this.btnRemove.TextColor = System.Drawing.Color.White;
-            this.btnRemove.UseVisualStyleBackColor = false;
-            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // RemoveCars
             // 
@@ -246,12 +191,6 @@
         private System.Windows.Forms.Label txtManufacturer;
         private System.Windows.Forms.TextBox txrManufacturer;
         private System.Windows.Forms.TextBox txtModel;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Model;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Manufacturer;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Year;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Price;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Kilometer;
         private RJButton btnRefresh;
     }
 }

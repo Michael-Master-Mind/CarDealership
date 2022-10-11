@@ -23,21 +23,25 @@ namespace cardeal
             try
             {
                 con.Open();
-                SqlDataReader sdr = cmd.ExecuteReader();
-                int r = 0;
-                //dgv.DataSource = null;
-                //dgv.DataSource = cmd;
-                while (sdr.Read())
-                {
-                    dgv.Rows.Add(1);
-                    dgv[0, r].Value = sdr["ID"].ToString();
-                    dgv[1, r].Value = sdr["Model"].ToString();
-                    dgv[2, r].Value = sdr["Manufacturer"].ToString();
-                    dgv[3, r].Value = sdr["Year"].ToString();
-                    dgv[4, r].Value = sdr["Price"].ToString();
-                    dgv[5, r].Value = sdr["Kilometer"].ToString();
-                    r++;
-                }
+                SqlDataAdapter da = new SqlDataAdapter(query, con);
+                DataSet ds = new DataSet();
+                da.Fill(ds, "Cars");
+                dgv.DataSource = ds.Tables["Cars"];
+                //SqlDataReader sdr = cmd.ExecuteReader();
+                //int r = 0;
+                ////dgv.DataSource = null;
+                ////dgv.DataSource = cmd;
+                //while (sdr.Read())
+                //{
+                //    dgv.Rows.Add(1);
+                //    dgv[0, r].Value = sdr["ID"].ToString();
+                //    dgv[1, r].Value = sdr["Model"].ToString();
+                //    dgv[2, r].Value = sdr["Manufacturer"].ToString();
+                //    dgv[3, r].Value = sdr["Year"].ToString();
+                //    dgv[4, r].Value = sdr["Price"].ToString();
+                //    dgv[5, r].Value = sdr["Kilometer"].ToString();
+                //    r++;
+            
             }
             catch (SqlException se)
             {
