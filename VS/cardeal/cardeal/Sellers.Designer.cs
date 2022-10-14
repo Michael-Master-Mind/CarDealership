@@ -33,9 +33,10 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 12);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1405, 633);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1429, 796);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // Sellers

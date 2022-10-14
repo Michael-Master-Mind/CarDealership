@@ -83,7 +83,7 @@ namespace cardeal
 
         private void label3_Click(object sender, EventArgs e)
         {
-            loadform(new Buy());
+            loadform(new Buypanel());
             indicator.Top = 80;
             
         }
@@ -96,7 +96,7 @@ namespace cardeal
         }
         private void label4_Click(object sender, EventArgs e)
         {
-            loadform(new Agent());
+            loadform(new Aglogin());
             indicator.Top = 200;
         }
         private void label19_Click(object sender, EventArgs e)
@@ -159,7 +159,8 @@ namespace cardeal
 
         private void rjButton1_Click_1(object sender, EventArgs e)
         {
-
+            sign s = new sign();
+            s.Show();
         }
 
         private void label15_Click(object sender, EventArgs e)

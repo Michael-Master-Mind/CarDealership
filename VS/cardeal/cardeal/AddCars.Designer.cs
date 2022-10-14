@@ -69,9 +69,10 @@
             this.panel1.Controls.Add(this.txtManufacturer);
             this.panel1.Controls.Add(this.txrManufacturer);
             this.panel1.Controls.Add(this.txtModel);
-            this.panel1.Location = new System.Drawing.Point(320, 75);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(767, 605);
+            this.panel1.Size = new System.Drawing.Size(1429, 796);
             this.panel1.TabIndex = 25;
             // 
             // label4
@@ -79,7 +80,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(179, 364);
+            this.label4.Location = new System.Drawing.Point(484, 448);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(114, 23);
             this.label4.TabIndex = 29;
@@ -87,7 +88,7 @@
             // 
             // txtKilometer
             // 
-            this.txtKilometer.Location = new System.Drawing.Point(186, 390);
+            this.txtKilometer.Location = new System.Drawing.Point(491, 474);
             this.txtKilometer.Name = "txtKilometer";
             this.txtKilometer.Size = new System.Drawing.Size(374, 22);
             this.txtKilometer.TabIndex = 30;
@@ -97,7 +98,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(182, 200);
+            this.label1.Location = new System.Drawing.Point(487, 284);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(59, 23);
             this.label1.TabIndex = 25;
@@ -108,7 +109,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(182, 278);
+            this.label2.Location = new System.Drawing.Point(487, 362);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(64, 23);
             this.label2.TabIndex = 26;
@@ -116,14 +117,14 @@
             // 
             // txtPrice
             // 
-            this.txtPrice.Location = new System.Drawing.Point(186, 304);
+            this.txtPrice.Location = new System.Drawing.Point(491, 388);
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(374, 22);
             this.txtPrice.TabIndex = 28;
             // 
             // txtYear
             // 
-            this.txtYear.Location = new System.Drawing.Point(186, 226);
+            this.txtYear.Location = new System.Drawing.Point(491, 310);
             this.txtYear.Name = "txtYear";
             this.txtYear.Size = new System.Drawing.Size(374, 22);
             this.txtYear.TabIndex = 27;
@@ -133,7 +134,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(182, 54);
+            this.label3.Location = new System.Drawing.Point(487, 138);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(71, 23);
             this.label3.TabIndex = 20;
@@ -150,7 +151,7 @@
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Cooper Black", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(149, 470);
+            this.btnAdd.Location = new System.Drawing.Point(454, 554);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(459, 61);
             this.btnAdd.TabIndex = 24;
@@ -164,7 +165,7 @@
             this.txtManufacturer.AutoSize = true;
             this.txtManufacturer.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtManufacturer.ForeColor = System.Drawing.Color.White;
-            this.txtManufacturer.Location = new System.Drawing.Point(182, 133);
+            this.txtManufacturer.Location = new System.Drawing.Point(487, 217);
             this.txtManufacturer.Name = "txtManufacturer";
             this.txtManufacturer.Size = new System.Drawing.Size(152, 23);
             this.txtManufacturer.TabIndex = 21;
@@ -172,14 +173,14 @@
             // 
             // txrManufacturer
             // 
-            this.txrManufacturer.Location = new System.Drawing.Point(186, 159);
+            this.txrManufacturer.Location = new System.Drawing.Point(491, 243);
             this.txrManufacturer.Name = "txrManufacturer";
             this.txrManufacturer.Size = new System.Drawing.Size(374, 22);
             this.txrManufacturer.TabIndex = 23;
             // 
             // txtModel
             // 
-            this.txtModel.Location = new System.Drawing.Point(186, 80);
+            this.txtModel.Location = new System.Drawing.Point(491, 164);
             this.txtModel.Name = "txtModel";
             this.txtModel.Size = new System.Drawing.Size(374, 22);
             this.txtModel.TabIndex = 22;

@@ -80,7 +80,6 @@
             this.label18 = new System.Windows.Forms.Label();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.rjButton1 = new cardeal.RJButton();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -90,6 +89,7 @@
             this.panel12 = new System.Windows.Forms.Panel();
             this.label28 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
+            this.rjButton1 = new cardeal.RJButton();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel1.SuspendLayout();
@@ -346,7 +346,6 @@
             this.panelhome.Controls.Add(this.pictureBox9);
             this.panelhome.Controls.Add(this.PBox3);
             this.panelhome.Controls.Add(this.panel12);
-            this.panelhome.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelhome.Location = new System.Drawing.Point(0, 0);
             this.panelhome.Name = "panelhome";
             this.panelhome.Size = new System.Drawing.Size(1838, 1051);
@@ -357,7 +356,7 @@
             // 
             this.pictureBox12.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
-            this.pictureBox12.Location = new System.Drawing.Point(1373, 853);
+            this.pictureBox12.Location = new System.Drawing.Point(1350, 877);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(413, 652);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -368,7 +367,7 @@
             // 
             this.pictureBox8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(940, 853);
+            this.pictureBox8.Location = new System.Drawing.Point(917, 877);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(413, 652);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -379,7 +378,7 @@
             // 
             this.pictureBox7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(563, 853);
+            this.pictureBox7.Location = new System.Drawing.Point(540, 877);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(356, 652);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -390,7 +389,7 @@
             // 
             this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(88, 853);
+            this.pictureBox3.Location = new System.Drawing.Point(65, 877);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(453, 652);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -419,9 +418,9 @@
             this.panel7.Controls.Add(this.label11);
             this.panel7.Controls.Add(this.label10);
             this.panel7.Controls.Add(this.label9);
-            this.panel7.Location = new System.Drawing.Point(0, 3605);
+            this.panel7.Location = new System.Drawing.Point(0, 3647);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1838, 321);
+            this.panel7.Size = new System.Drawing.Size(1822, 312);
             this.panel7.TabIndex = 40;
             // 
             // label30
@@ -625,7 +624,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI Black", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(754, 2227);
+            this.label8.Location = new System.Drawing.Point(754, 2280);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(234, 54);
             this.label8.TabIndex = 38;
@@ -636,7 +635,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(325, 2315);
+            this.label6.Location = new System.Drawing.Point(325, 2368);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(1316, 62);
             this.label6.TabIndex = 37;
@@ -646,7 +645,7 @@
             // 
             this.panel6.BackColor = System.Drawing.Color.Chocolate;
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel6.Location = new System.Drawing.Point(201, 2284);
+            this.panel6.Location = new System.Drawing.Point(201, 2337);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(191, 15);
             this.panel6.TabIndex = 35;
@@ -657,7 +656,7 @@
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Segoe UI Black", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Location = new System.Drawing.Point(288, 3148);
+            this.label17.Location = new System.Drawing.Point(148, 3276);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(464, 54);
             this.label17.TabIndex = 31;
@@ -667,7 +666,7 @@
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.DarkOrange;
-            this.panel8.Location = new System.Drawing.Point(218, 3140);
+            this.panel8.Location = new System.Drawing.Point(92, 3240);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(32, 333);
             this.panel8.TabIndex = 33;
@@ -677,7 +676,7 @@
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(342, 3224);
+            this.label18.Location = new System.Drawing.Point(202, 3352);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(577, 124);
             this.label18.TabIndex = 32;
@@ -688,9 +687,9 @@
             // pictureBox11
             // 
             this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
-            this.pictureBox11.Location = new System.Drawing.Point(1132, 2783);
+            this.pictureBox11.Location = new System.Drawing.Point(1065, 2853);
             this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(669, 809);
+            this.pictureBox11.Size = new System.Drawing.Size(669, 774);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox11.TabIndex = 30;
             this.pictureBox11.TabStop = false;
@@ -698,7 +697,7 @@
             // pictureBox10
             // 
             this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(89, 2451);
+            this.pictureBox10.Location = new System.Drawing.Point(22, 2547);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(1142, 641);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -706,32 +705,12 @@
             this.pictureBox10.TabStop = false;
             this.pictureBox10.Click += new System.EventHandler(this.pictureBox10_Click);
             // 
-            // rjButton1
-            // 
-            this.rjButton1.BackColor = System.Drawing.Color.DarkOrange;
-            this.rjButton1.BackgroundColor = System.Drawing.Color.DarkOrange;
-            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton1.BorderRadius = 20;
-            this.rjButton1.BorderSize = 0;
-            this.rjButton1.FlatAppearance.BorderSize = 0;
-            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.Font = new System.Drawing.Font("Segoe UI Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(201, 1977);
-            this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(367, 64);
-            this.rjButton1.TabIndex = 3;
-            this.rjButton1.Text = "Start";
-            this.rjButton1.TextColor = System.Drawing.Color.White;
-            this.rjButton1.UseVisualStyleBackColor = false;
-            this.rjButton1.Click += new System.EventHandler(this.rjButton1_Click_1);
-            // 
             // label16
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(154, 1882);
+            this.label16.Location = new System.Drawing.Point(156, 1904);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(461, 31);
             this.label16.TabIndex = 1;
@@ -743,7 +722,7 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Segoe Script", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(36, 1790);
+            this.label15.Location = new System.Drawing.Point(38, 1812);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(698, 61);
             this.label15.TabIndex = 0;
@@ -754,7 +733,7 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.Chocolate;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Location = new System.Drawing.Point(1063, 2403);
+            this.panel4.Location = new System.Drawing.Point(1063, 2456);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(705, 11);
             this.panel4.TabIndex = 28;
@@ -764,7 +743,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Black", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(167, 268);
+            this.label5.Location = new System.Drawing.Point(159, 280);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(615, 318);
             this.label5.TabIndex = 24;
@@ -773,7 +752,7 @@
             // pictureBox9
             // 
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(763, 1598);
+            this.pictureBox9.Location = new System.Drawing.Point(765, 1620);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(1017, 594);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -785,7 +764,7 @@
             // 
             this.PBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.PBox3.Image = ((System.Drawing.Image)(resources.GetObject("PBox3.Image")));
-            this.PBox3.Location = new System.Drawing.Point(507, 73);
+            this.PBox3.Location = new System.Drawing.Point(499, 85);
             this.PBox3.Name = "PBox3";
             this.PBox3.Size = new System.Drawing.Size(1297, 707);
             this.PBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -800,7 +779,7 @@
             this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel12.Location = new System.Drawing.Point(0, 0);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(1838, 67);
+            this.panel12.Size = new System.Drawing.Size(1822, 67);
             this.panel12.TabIndex = 15;
             this.panel12.Paint += new System.Windows.Forms.PaintEventHandler(this.panel12_Paint);
             // 
@@ -826,6 +805,26 @@
             this.label27.TabIndex = 8;
             this.label27.Text = "Sign in";
             this.label27.Click += new System.EventHandler(this.label27_Click_1);
+            // 
+            // rjButton1
+            // 
+            this.rjButton1.BackColor = System.Drawing.Color.DarkOrange;
+            this.rjButton1.BackgroundColor = System.Drawing.Color.DarkOrange;
+            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjButton1.BorderRadius = 20;
+            this.rjButton1.BorderSize = 0;
+            this.rjButton1.FlatAppearance.BorderSize = 0;
+            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton1.Font = new System.Drawing.Font("Segoe UI Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rjButton1.ForeColor = System.Drawing.Color.White;
+            this.rjButton1.Location = new System.Drawing.Point(203, 1999);
+            this.rjButton1.Name = "rjButton1";
+            this.rjButton1.Size = new System.Drawing.Size(367, 64);
+            this.rjButton1.TabIndex = 3;
+            this.rjButton1.Text = "Start";
+            this.rjButton1.TextColor = System.Drawing.Color.White;
+            this.rjButton1.UseVisualStyleBackColor = false;
+            this.rjButton1.Click += new System.EventHandler(this.rjButton1_Click_1);
             // 
             // Home
             // 

@@ -73,11 +73,47 @@
     <Compile Include="Agent.Designer.cs">
       <DependentUpon>Agent.cs</DependentUpon>
     </Compile>
+    <Compile Include="Aglogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aglogin.Designer.cs">
+      <DependentUpon>Aglogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Buy.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Buy.Designer.cs">
       <DependentUpon>Buy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckOut.Designer.cs">
+      <DependentUpon>CheckOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dash.Designer.cs">
+      <DependentUpon>Dash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Get.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Get.Designer.cs">
+      <DependentUpon>Get.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Get1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Get1.Designer.cs">
+      <DependentUpon>Get1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Get2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Get2.Designer.cs">
+      <DependentUpon>Get2.cs</DependentUpon>
     </Compile>
     <Compile Include="H.cs">
       <SubType>Form</SubType>
@@ -150,8 +186,26 @@
     <EmbeddedResource Include="Agent.resx">
       <DependentUpon>Agent.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Aglogin.resx">
+      <DependentUpon>Aglogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Buy.resx">
       <DependentUpon>Buy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckOut.resx">
+      <DependentUpon>CheckOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dash.resx">
+      <DependentUpon>Dash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Get.resx">
+      <DependentUpon>Get.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Get1.resx">
+      <DependentUpon>Get1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Get2.resx">
+      <DependentUpon>Get2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="H.resx">
       <DependentUpon>H.cs</DependentUpon>

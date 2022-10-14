@@ -45,17 +45,18 @@
             // dgv
             // 
             this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv.Location = new System.Drawing.Point(309, 12);
+            this.dgv.Location = new System.Drawing.Point(447, 83);
             this.dgv.Name = "dgv";
             this.dgv.RowHeadersWidth = 51;
             this.dgv.RowTemplate.Height = 24;
-            this.dgv.Size = new System.Drawing.Size(860, 354);
+            this.dgv.Size = new System.Drawing.Size(924, 606);
             this.dgv.TabIndex = 0;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.Controls.Add(this.btnRefresh);
+            this.panel1.Controls.Add(this.dgv);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.txtYear);
             this.panel1.Controls.Add(this.label3);
@@ -63,9 +64,10 @@
             this.panel1.Controls.Add(this.txtManufacturer);
             this.panel1.Controls.Add(this.txrManufacturer);
             this.panel1.Controls.Add(this.txtModel);
-            this.panel1.Location = new System.Drawing.Point(351, 372);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(767, 335);
+            this.panel1.Size = new System.Drawing.Size(1429, 796);
             this.panel1.TabIndex = 26;
             // 
             // btnRefresh
@@ -79,7 +81,7 @@
             this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRefresh.Font = new System.Drawing.Font("Cooper Black", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRefresh.ForeColor = System.Drawing.Color.White;
-            this.btnRefresh.Location = new System.Drawing.Point(464, 176);
+            this.btnRefresh.Location = new System.Drawing.Point(90, 362);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(257, 61);
             this.btnRefresh.TabIndex = 28;
@@ -128,7 +130,7 @@
             this.btnRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRemove.Font = new System.Drawing.Font("Cooper Black", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRemove.ForeColor = System.Drawing.Color.White;
-            this.btnRemove.Location = new System.Drawing.Point(464, 103);
+            this.btnRemove.Location = new System.Drawing.Point(90, 289);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(257, 61);
             this.btnRemove.TabIndex = 24;
@@ -169,7 +171,6 @@
             this.BackColor = System.Drawing.Color.PeachPuff;
             this.ClientSize = new System.Drawing.Size(1429, 796);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.dgv);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "RemoveCars";
             this.Text = "RemoveCars";

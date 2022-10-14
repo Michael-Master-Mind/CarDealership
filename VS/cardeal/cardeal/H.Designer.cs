@@ -112,7 +112,6 @@
             this.panelhome.Controls.Add(this.pictureBox9);
             this.panelhome.Controls.Add(this.PBox3);
             this.panelhome.Controls.Add(this.panel12);
-            this.panelhome.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelhome.Location = new System.Drawing.Point(0, 0);
             this.panelhome.Name = "panelhome";
             this.panelhome.Size = new System.Drawing.Size(1781, 1004);
@@ -577,6 +576,7 @@
             this.label27.Size = new System.Drawing.Size(113, 38);
             this.label27.TabIndex = 8;
             this.label27.Text = "Sign in";
+            this.label27.Click += new System.EventHandler(this.label27_Click);
             // 
             // H
             // 

@@ -30,27 +30,31 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(settings));
             this.panelhome = new System.Windows.Forms.Panel();
-            this.label29 = new System.Windows.Forms.Label();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.rjButton1 = new cardeal.RJButton();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.rjButton1 = new cardeal.RJButton();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label29 = new System.Windows.Forms.Label();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             this.panelhome.SuspendLayout();
-            this.panel12.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,59 +71,6 @@
             this.panelhome.Name = "panelhome";
             this.panelhome.Size = new System.Drawing.Size(1756, 1051);
             this.panelhome.TabIndex = 10;
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.ForeColor = System.Drawing.Color.White;
-            this.label29.Location = new System.Drawing.Point(13, 10);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(149, 38);
-            this.label29.TabIndex = 23;
-            this.label29.Text = "ACCOUNT";
-            // 
-            // panel12
-            // 
-            this.panel12.BackColor = System.Drawing.Color.DarkOrange;
-            this.panel12.Controls.Add(this.label28);
-            this.panel12.Controls.Add(this.label27);
-            this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel12.Location = new System.Drawing.Point(0, 0);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(1756, 67);
-            this.panel12.TabIndex = 15;
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Segoe UI Black", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.ForeColor = System.Drawing.Color.White;
-            this.label28.Location = new System.Drawing.Point(13, 12);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(100, 38);
-            this.label28.TabIndex = 9;
-            this.label28.Text = "Home";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Segoe UI Black", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.White;
-            this.label27.Location = new System.Drawing.Point(1650, 12);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(113, 38);
-            this.label27.TabIndex = 8;
-            this.label27.Text = "Sign in";
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.panel1.Controls.Add(this.label29);
-            this.panel1.Location = new System.Drawing.Point(74, 148);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(612, 661);
-            this.panel1.TabIndex = 24;
             // 
             // panel2
             // 
@@ -150,6 +101,43 @@
             this.label1.TabIndex = 26;
             this.label1.Text = "CHANGES";
             this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // rjButton1
+            // 
+            this.rjButton1.BackColor = System.Drawing.Color.Black;
+            this.rjButton1.BackgroundColor = System.Drawing.Color.Black;
+            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjButton1.BorderRadius = 15;
+            this.rjButton1.BorderSize = 0;
+            this.rjButton1.FlatAppearance.BorderSize = 0;
+            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton1.Font = new System.Drawing.Font("Segoe UI Black", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rjButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.rjButton1.Location = new System.Drawing.Point(120, 451);
+            this.rjButton1.Name = "rjButton1";
+            this.rjButton1.Size = new System.Drawing.Size(341, 57);
+            this.rjButton1.TabIndex = 37;
+            this.rjButton1.Text = "UPDATE";
+            this.rjButton1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.rjButton1.UseVisualStyleBackColor = false;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(103, 383);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(374, 22);
+            this.textBox2.TabIndex = 36;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(98, 357);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(191, 23);
+            this.label3.TabIndex = 35;
+            this.label3.Text = "Change Password";
             // 
             // textBox4
             // 
@@ -205,42 +193,62 @@
             this.label11.TabIndex = 29;
             this.label11.Text = "Change Name";
             // 
-            // label3
+            // panel1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(98, 357);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(191, 23);
-            this.label3.TabIndex = 35;
-            this.label3.Text = "Change Password";
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label16);
+            this.panel1.Controls.Add(this.label17);
+            this.panel1.Controls.Add(this.label29);
+            this.panel1.Location = new System.Drawing.Point(74, 148);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(612, 661);
+            this.panel1.TabIndex = 24;
             // 
-            // textBox2
+            // label29
             // 
-            this.textBox2.Location = new System.Drawing.Point(103, 383);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(374, 22);
-            this.textBox2.TabIndex = 36;
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.ForeColor = System.Drawing.Color.White;
+            this.label29.Location = new System.Drawing.Point(13, 10);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(149, 38);
+            this.label29.TabIndex = 23;
+            this.label29.Text = "ACCOUNT";
             // 
-            // rjButton1
+            // panel12
             // 
-            this.rjButton1.BackColor = System.Drawing.Color.Black;
-            this.rjButton1.BackgroundColor = System.Drawing.Color.Black;
-            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton1.BorderRadius = 15;
-            this.rjButton1.BorderSize = 0;
-            this.rjButton1.FlatAppearance.BorderSize = 0;
-            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.Font = new System.Drawing.Font("Segoe UI Black", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rjButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.rjButton1.Location = new System.Drawing.Point(120, 451);
-            this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(341, 57);
-            this.rjButton1.TabIndex = 37;
-            this.rjButton1.Text = "UPDATE";
-            this.rjButton1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.rjButton1.UseVisualStyleBackColor = false;
+            this.panel12.BackColor = System.Drawing.Color.DarkOrange;
+            this.panel12.Controls.Add(this.label28);
+            this.panel12.Controls.Add(this.label27);
+            this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel12.Location = new System.Drawing.Point(0, 0);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(1756, 67);
+            this.panel12.TabIndex = 15;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Segoe UI Black", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.ForeColor = System.Drawing.Color.White;
+            this.label28.Location = new System.Drawing.Point(13, 12);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(100, 38);
+            this.label28.TabIndex = 9;
+            this.label28.Text = "Home";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Segoe UI Black", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.Color.White;
+            this.label27.Location = new System.Drawing.Point(1650, 12);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(113, 38);
+            this.label27.TabIndex = 8;
+            this.label27.Text = "Sign in";
             // 
             // pictureBox1
             // 
@@ -254,6 +262,54 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Black;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label4.Location = new System.Drawing.Point(40, 413);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(180, 38);
+            this.label4.TabIndex = 35;
+            this.label4.Text = "PASSWORD:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Black;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label2.Location = new System.Drawing.Point(40, 102);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(109, 38);
+            this.label2.TabIndex = 32;
+            this.label2.Text = "NAME:";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Black;
+            this.label16.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label16.Location = new System.Drawing.Point(40, 307);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(110, 38);
+            this.label16.TabIndex = 34;
+            this.label16.Text = "EMAIL:";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.Black;
+            this.label17.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label17.Location = new System.Drawing.Point(40, 206);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(121, 38);
+            this.label17.TabIndex = 33;
+            this.label17.Text = "PHONE:";
+            // 
             // settings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -264,12 +320,12 @@
             this.Name = "settings";
             this.Text = "settings";
             this.panelhome.ResumeLayout(false);
-            this.panel12.ResumeLayout(false);
-            this.panel12.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel12.ResumeLayout(false);
+            this.panel12.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -295,5 +351,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private RJButton rjButton1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
     }
 }

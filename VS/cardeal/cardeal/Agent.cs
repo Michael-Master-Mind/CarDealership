@@ -80,5 +80,20 @@ namespace cardeal
         {
             loadform(new Sellers());
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label29_Click_1(object sender, EventArgs e)
+        {
+            loadform(new Dash());
+        }
     }
 }

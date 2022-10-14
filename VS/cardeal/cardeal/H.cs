@@ -16,5 +16,11 @@ namespace cardeal
         {
             InitializeComponent();
         }
+
+        private void label27_Click(object sender, EventArgs e)
+        {
+            sign s = new sign();
+            s.Show();
+        }
     }
 }

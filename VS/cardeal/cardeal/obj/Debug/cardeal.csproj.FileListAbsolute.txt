@@ -42,7 +42,6 @@ C:\Desktop\Dealers\CarDealership.git\VS\cardeal\cardeal\bin\Debug\LiveCharts.Wpf
 C:\Desktop\Dealers\CarDealership.git\VS\cardeal\cardeal\obj\Debug\cardeal.csproj.AssemblyReference.cache
 C:\Desktop\Dealers\CarDealership.git\VS\cardeal\cardeal\obj\Debug\cardeal.csproj.SuggestedBindingRedirects.cache
 C:\Desktop\Dealers\CarDealership.git\VS\cardeal\cardeal\obj\Debug\cardeal.Agent.resources
-C:\Desktop\Dealers\CarDealership.git\VS\cardeal\cardeal\obj\Debug\cardeal.Buy.resources
 C:\Desktop\Dealers\CarDealership.git\VS\cardeal\cardeal\obj\Debug\cardeal.H.resources
 C:\Desktop\Dealers\CarDealership.git\VS\cardeal\cardeal\obj\Debug\cardeal.Newacc.resources
 C:\Desktop\Dealers\CarDealership.git\VS\cardeal\cardeal\obj\Debug\cardeal.Sell.resources
@@ -89,3 +88,14 @@ C:\Users\henok\Documents\GitHub\CarDealership\VS\cardeal\cardeal\obj\Debug\carde
 C:\Users\henok\Documents\GitHub\CarDealership\VS\cardeal\cardeal\obj\Debug\cardeal.csproj.CopyComplete
 C:\Users\henok\Documents\GitHub\CarDealership\VS\cardeal\cardeal\obj\Debug\cardeal.exe
 C:\Users\henok\Documents\GitHub\CarDealership\VS\cardeal\cardeal\obj\Debug\cardeal.pdb
+C:\Desktop\Dealers\CarDealership.git\VS\cardeal\cardeal\obj\Debug\cardeal.AddCars.resources
+C:\Desktop\Dealers\CarDealership.git\VS\cardeal\cardeal\obj\Debug\cardeal.Get.resources
+C:\Desktop\Dealers\CarDealership.git\VS\cardeal\cardeal\obj\Debug\cardeal.RemoveCars.resources
+C:\Desktop\Dealers\CarDealership.git\VS\cardeal\cardeal\obj\Debug\cardeal.SellerInfo.resources
+C:\Desktop\Dealers\CarDealership.git\VS\cardeal\cardeal\obj\Debug\cardeal.Sellers.resources
+C:\Desktop\Dealers\CarDealership.git\VS\cardeal\cardeal\obj\Debug\cardeal.CheckOut.resources
+C:\Desktop\Dealers\CarDealership.git\VS\cardeal\cardeal\obj\Debug\cardeal.Dash.resources
+C:\Desktop\Dealers\CarDealership.git\VS\cardeal\cardeal\obj\Debug\cardeal.Aglogin.resources
+C:\Desktop\Dealers\CarDealership.git\VS\cardeal\cardeal\obj\Debug\cardeal.Buypanel.resources
+C:\Desktop\Dealers\CarDealership.git\VS\cardeal\cardeal\obj\Debug\cardeal.Get1.resources
+C:\Desktop\Dealers\CarDealership.git\VS\cardeal\cardeal\obj\Debug\cardeal.Get2.resources

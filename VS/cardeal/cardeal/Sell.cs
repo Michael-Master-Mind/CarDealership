@@ -52,5 +52,10 @@ namespace cardeal
         {
             submit(txtName.Text,Convert.ToInt32(txtPhone.Text),txtEmail.Text,txtMessage.Text);
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
