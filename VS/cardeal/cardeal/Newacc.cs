@@ -32,6 +32,7 @@ namespace cardeal
             cm.CommandType = CommandType.StoredProcedure;
             cm.Parameters.AddWithValue("@email", email);
             cm.Parameters.AddWithValue("@password", password);
+            cmd.Parameters.AddWithValue("@password", password);
 
             try
             {
@@ -41,6 +42,10 @@ namespace cardeal
                 cm.ExecuteNonQuery();
                 con.Close();
                 MessageBox.Show(firstname + " ,has been Successfully Registered!!!");
+                txtFirstname.Text = "";
+                txtLastname.Text = "";
+                txtEmail.Text = "";
+                txtPassword.Text = "";
             }
             catch (SqlException se)
             {
