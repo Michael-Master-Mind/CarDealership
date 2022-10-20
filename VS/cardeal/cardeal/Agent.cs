@@ -23,6 +23,12 @@ namespace cardeal
         {
             InitializeComponent();
         }
+
+        public Agent(string s)
+        {
+            InitializeComponent();
+            lblUser.Text = s;
+        }
         public void loadform(object Form)
         {
             if (this.AgentPanel.Controls.Count > 0)
@@ -94,6 +100,11 @@ namespace cardeal
         private void label29_Click_1(object sender, EventArgs e)
         {
             loadform(new Dash());
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
