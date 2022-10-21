@@ -23,7 +23,6 @@ namespace cardeal
         {
             InitializeComponent();
         }
-
         public Agent(string s)
         {
             InitializeComponent();
@@ -100,11 +99,6 @@ namespace cardeal
         private void label29_Click_1(object sender, EventArgs e)
         {
             loadform(new Dash());
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
