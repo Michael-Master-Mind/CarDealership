@@ -30,13 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Aglogin));
             this.panelhome = new System.Windows.Forms.Panel();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.label28 = new System.Windows.Forms.Label();
+            this.txtPassword = new System.Windows.Forms.TextBox();
             this.rjButton1 = new cardeal.RJButton();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.label28 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelhome.SuspendLayout();
             this.panel12.SuspendLayout();
@@ -47,9 +47,9 @@
             // 
             this.panelhome.AutoScroll = true;
             this.panelhome.BackColor = System.Drawing.Color.Black;
-            this.panelhome.Controls.Add(this.textBox2);
+            this.panelhome.Controls.Add(this.txtPassword);
             this.panelhome.Controls.Add(this.rjButton1);
-            this.panelhome.Controls.Add(this.textBox1);
+            this.panelhome.Controls.Add(this.txtName);
             this.panelhome.Controls.Add(this.label4);
             this.panelhome.Controls.Add(this.label3);
             this.panelhome.Controls.Add(this.panel12);
@@ -60,26 +60,13 @@
             this.panelhome.Size = new System.Drawing.Size(1756, 1051);
             this.panelhome.TabIndex = 11;
             // 
-            // panel12
+            // txtPassword
             // 
-            this.panel12.BackColor = System.Drawing.Color.DarkOrange;
-            this.panel12.Controls.Add(this.label28);
-            this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel12.Location = new System.Drawing.Point(0, 0);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(1756, 67);
-            this.panel12.TabIndex = 15;
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Segoe UI Black", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.ForeColor = System.Drawing.Color.White;
-            this.label28.Location = new System.Drawing.Point(13, 12);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(102, 38);
-            this.label28.TabIndex = 9;
-            this.label28.Text = "Agent";
+            this.txtPassword.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Location = new System.Drawing.Point(664, 490);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(374, 30);
+            this.txtPassword.TabIndex = 25;
             // 
             // rjButton1
             // 
@@ -101,13 +88,13 @@
             this.rjButton1.UseVisualStyleBackColor = false;
             this.rjButton1.Click += new System.EventHandler(this.rjButton1_Click);
             // 
-            // textBox1
+            // txtName
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(664, 379);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(374, 30);
-            this.textBox1.TabIndex = 22;
+            this.txtName.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.Location = new System.Drawing.Point(664, 379);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(374, 30);
+            this.txtName.TabIndex = 22;
             // 
             // label4
             // 
@@ -131,13 +118,26 @@
             this.label3.TabIndex = 20;
             this.label3.Text = "Name";
             // 
-            // textBox2
+            // panel12
             // 
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(664, 490);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(374, 30);
-            this.textBox2.TabIndex = 25;
+            this.panel12.BackColor = System.Drawing.Color.DarkOrange;
+            this.panel12.Controls.Add(this.label28);
+            this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel12.Location = new System.Drawing.Point(0, 0);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(1756, 67);
+            this.panel12.TabIndex = 15;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Segoe UI Black", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.ForeColor = System.Drawing.Color.White;
+            this.label28.Location = new System.Drawing.Point(13, 12);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(102, 38);
+            this.label28.TabIndex = 9;
+            this.label28.Text = "Agent";
             // 
             // pictureBox1
             // 
@@ -173,9 +173,9 @@
         private System.Windows.Forms.Panel panelhome;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtPassword;
         private RJButton rjButton1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
