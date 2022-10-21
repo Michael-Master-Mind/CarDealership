@@ -16,10 +16,16 @@ namespace cardeal
         {
             InitializeComponent();
         }
+        public Get2(string email)
+        {
+            InitializeComponent();
+            lblSignin.Text = email;
+        }
+
 
         private void rjButton2_Click(object sender, EventArgs e)
         {
-            CheckOut ck = new CheckOut();
+            CheckOut ck = new CheckOut(3,lblSignin.Text);
             ck.Hide();
             ck.Show();
         }

@@ -62,25 +62,20 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.rjButton1 = new cardeal.RJButton();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.lblName = new System.Windows.Forms.TextBox();
             this.label29 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
             this.label28 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.rjButton1 = new cardeal.RJButton();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cmbLocation = new System.Windows.Forms.ComboBox();
             this.panelhome.SuspendLayout();
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
@@ -135,7 +130,7 @@
             this.panel8.Controls.Add(this.label38);
             this.panel8.Controls.Add(this.label39);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel8.Location = new System.Drawing.Point(0, 1309);
+            this.panel8.Location = new System.Drawing.Point(0, 2737);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(1735, 318);
             this.panel8.TabIndex = 104;
@@ -340,7 +335,7 @@
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.panel7);
-            this.panel3.Location = new System.Drawing.Point(875, 340);
+            this.panel3.Location = new System.Drawing.Point(866, 368);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(848, 801);
             this.panel3.TabIndex = 29;
@@ -350,7 +345,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(42, 28);
+            this.label7.Location = new System.Drawing.Point(62, 28);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(366, 38);
             this.label7.TabIndex = 29;
@@ -368,7 +363,7 @@
             this.panel7.Controls.Add(this.txtName);
             this.panel7.Controls.Add(this.label10);
             this.panel7.Controls.Add(this.label11);
-            this.panel7.Location = new System.Drawing.Point(49, 91);
+            this.panel7.Location = new System.Drawing.Point(69, 79);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(714, 646);
             this.panel7.TabIndex = 1;
@@ -469,34 +464,26 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.label16);
-            this.panel2.Controls.Add(this.label17);
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Location = new System.Drawing.Point(54, 340);
+            this.panel2.Controls.Add(this.panel4);
+            this.panel2.Location = new System.Drawing.Point(43, 368);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(795, 801);
             this.panel2.TabIndex = 28;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // label6
+            // panel4
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(29, 28);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(179, 38);
-            this.label6.TabIndex = 27;
-            this.label6.Text = "SPECIALTIES";
+            this.panel4.Location = new System.Drawing.Point(20, 17);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(754, 665);
+            this.panel4.TabIndex = 0;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(44, 139);
+            this.label3.Location = new System.Drawing.Point(42, 105);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(361, 59);
             this.label3.TabIndex = 26;
@@ -505,22 +492,44 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.panel1.Controls.Add(this.comboBox2);
+            this.panel1.Controls.Add(this.cmbLocation);
             this.panel1.Controls.Add(this.rjButton1);
             this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.lblName);
             this.panel1.Controls.Add(this.label29);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Location = new System.Drawing.Point(52, 202);
+            this.panel1.Location = new System.Drawing.Point(43, 203);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1671, 119);
             this.panel1.TabIndex = 25;
+            // 
+            // rjButton1
+            // 
+            this.rjButton1.BackColor = System.Drawing.Color.Black;
+            this.rjButton1.BackgroundColor = System.Drawing.Color.Black;
+            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjButton1.BorderRadius = 20;
+            this.rjButton1.BorderSize = 0;
+            this.rjButton1.FlatAppearance.BorderSize = 0;
+            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rjButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.rjButton1.Location = new System.Drawing.Point(1465, 51);
+            this.rjButton1.Name = "rjButton1";
+            this.rjButton1.Size = new System.Drawing.Size(190, 50);
+            this.rjButton1.TabIndex = 29;
+            this.rjButton1.Text = "SEARCH";
+            this.rjButton1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.rjButton1.UseVisualStyleBackColor = false;
+            this.rjButton1.Click += new System.EventHandler(this.rjButton1_Click);
             // 
             // comboBox1
             // 
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Agent"});
             this.comboBox1.Location = new System.Drawing.Point(1103, 56);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(270, 33);
@@ -537,13 +546,13 @@
             this.label1.TabIndex = 26;
             this.label1.Text = "SPECIALTIES";
             // 
-            // textBox2
+            // lblName
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(565, 56);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(302, 30);
-            this.textBox2.TabIndex = 24;
+            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.Location = new System.Drawing.Point(565, 56);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(302, 30);
+            this.lblName.TabIndex = 24;
             // 
             // label29
             // 
@@ -571,7 +580,6 @@
             // 
             this.panel12.BackColor = System.Drawing.Color.DarkOrange;
             this.panel12.Controls.Add(this.label28);
-            this.panel12.Controls.Add(this.label27);
             this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel12.Location = new System.Drawing.Point(0, 0);
             this.panel12.Name = "panel12";
@@ -589,106 +597,38 @@
             this.label28.TabIndex = 9;
             this.label28.Text = "Sell";
             // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Segoe UI Black", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.White;
-            this.label27.Location = new System.Drawing.Point(1650, 12);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(113, 38);
-            this.label27.TabIndex = 8;
-            this.label27.Text = "Sign in";
-            // 
             // pictureBox3
             // 
             this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(0, 0);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(1735, 1627);
+            this.pictureBox3.Size = new System.Drawing.Size(1735, 3055);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 105;
             this.pictureBox3.TabStop = false;
             // 
             // panel9
             // 
-            this.panel9.Location = new System.Drawing.Point(0, 1147);
+            this.panel9.Location = new System.Drawing.Point(0, 2575);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(1714, 162);
             this.panel9.TabIndex = 29;
             // 
-            // rjButton1
+            // cmbLocation
             // 
-            this.rjButton1.BackColor = System.Drawing.Color.Black;
-            this.rjButton1.BackgroundColor = System.Drawing.Color.Black;
-            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton1.BorderRadius = 20;
-            this.rjButton1.BorderSize = 0;
-            this.rjButton1.FlatAppearance.BorderSize = 0;
-            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rjButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.rjButton1.Location = new System.Drawing.Point(1465, 51);
-            this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(190, 50);
-            this.rjButton1.TabIndex = 29;
-            this.rjButton1.Text = "SEARCH";
-            this.rjButton1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.rjButton1.UseVisualStyleBackColor = false;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label4.Location = new System.Drawing.Point(49, 430);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(128, 38);
-            this.label4.TabIndex = 31;
-            this.label4.Text = "RATING:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label2.Location = new System.Drawing.Point(49, 119);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(109, 38);
-            this.label2.TabIndex = 28;
-            this.label2.Text = "NAME:";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label16.Location = new System.Drawing.Point(49, 324);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(187, 38);
-            this.label16.TabIndex = 30;
-            this.label16.Text = "SPECIALTIES:";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label17.Location = new System.Drawing.Point(49, 223);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(162, 38);
-            this.label17.TabIndex = 29;
-            this.label17.Text = "LOCATION:";
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(29, 56);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(270, 33);
-            this.comboBox2.TabIndex = 30;
+            this.cmbLocation.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbLocation.FormattingEnabled = true;
+            this.cmbLocation.Items.AddRange(new object[] {
+            "Addis Ababa",
+            "Bahir Dar",
+            "Dire Dawa",
+            "Nazret",
+            "Jimma"});
+            this.cmbLocation.Location = new System.Drawing.Point(29, 56);
+            this.cmbLocation.Name = "cmbLocation";
+            this.cmbLocation.Size = new System.Drawing.Size(270, 33);
+            this.cmbLocation.TabIndex = 30;
             // 
             // Sell
             // 
@@ -711,7 +651,6 @@
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel12.ResumeLayout(false);
@@ -757,23 +696,18 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox lblName;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label27;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label29;
         private RJButton rjButton1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.ComboBox cmbLocation;
     }
 }

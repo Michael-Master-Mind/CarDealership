@@ -33,24 +33,28 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.rjButton1 = new cardeal.RJButton();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtChangePassword = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtChangeEmail = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtChangeLastName = new System.Windows.Forms.TextBox();
+            this.txtChangeFirstName = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label29 = new System.Windows.Forms.Label();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblPassword = new System.Windows.Forms.Label();
+            this.lblFirstName = new System.Windows.Forms.Label();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.lblLastName = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.label28 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.rjButton2 = new cardeal.RJButton();
             this.panelhome.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -77,12 +81,12 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.rjButton1);
-            this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Controls.Add(this.txtChangePassword);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.textBox4);
+            this.panel2.Controls.Add(this.txtChangeEmail);
             this.panel2.Controls.Add(this.label9);
-            this.panel2.Controls.Add(this.textBox5);
-            this.panel2.Controls.Add(this.textBox6);
+            this.panel2.Controls.Add(this.txtChangeLastName);
+            this.panel2.Controls.Add(this.txtChangeFirstName);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.label11);
             this.panel2.Location = new System.Drawing.Point(856, 148);
@@ -100,7 +104,6 @@
             this.label1.Size = new System.Drawing.Size(148, 38);
             this.label1.TabIndex = 26;
             this.label1.Text = "CHANGES";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // rjButton1
             // 
@@ -120,13 +123,14 @@
             this.rjButton1.Text = "UPDATE";
             this.rjButton1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.rjButton1.UseVisualStyleBackColor = false;
+            this.rjButton1.Click += new System.EventHandler(this.rjButton1_Click_1);
             // 
-            // textBox2
+            // txtChangePassword
             // 
-            this.textBox2.Location = new System.Drawing.Point(103, 383);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(374, 22);
-            this.textBox2.TabIndex = 36;
+            this.txtChangePassword.Location = new System.Drawing.Point(103, 383);
+            this.txtChangePassword.Name = "txtChangePassword";
+            this.txtChangePassword.Size = new System.Drawing.Size(374, 22);
+            this.txtChangePassword.TabIndex = 36;
             // 
             // label3
             // 
@@ -139,12 +143,12 @@
             this.label3.TabIndex = 35;
             this.label3.Text = "Change Password";
             // 
-            // textBox4
+            // txtChangeEmail
             // 
-            this.textBox4.Location = new System.Drawing.Point(101, 307);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(374, 22);
-            this.textBox4.TabIndex = 34;
+            this.txtChangeEmail.Location = new System.Drawing.Point(101, 307);
+            this.txtChangeEmail.Name = "txtChangeEmail";
+            this.txtChangeEmail.Size = new System.Drawing.Size(374, 22);
+            this.txtChangeEmail.TabIndex = 34;
             // 
             // label9
             // 
@@ -157,19 +161,19 @@
             this.label9.TabIndex = 33;
             this.label9.Text = "Change Email";
             // 
-            // textBox5
+            // txtChangeLastName
             // 
-            this.textBox5.Location = new System.Drawing.Point(102, 234);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(374, 22);
-            this.textBox5.TabIndex = 32;
+            this.txtChangeLastName.Location = new System.Drawing.Point(102, 234);
+            this.txtChangeLastName.Name = "txtChangeLastName";
+            this.txtChangeLastName.Size = new System.Drawing.Size(374, 22);
+            this.txtChangeLastName.TabIndex = 32;
             // 
-            // textBox6
+            // txtChangeFirstName
             // 
-            this.textBox6.Location = new System.Drawing.Point(102, 162);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(374, 22);
-            this.textBox6.TabIndex = 31;
+            this.txtChangeFirstName.Location = new System.Drawing.Point(102, 162);
+            this.txtChangeFirstName.Name = "txtChangeFirstName";
+            this.txtChangeFirstName.Size = new System.Drawing.Size(374, 22);
+            this.txtChangeFirstName.TabIndex = 31;
             // 
             // label10
             // 
@@ -178,9 +182,9 @@
             this.label10.ForeColor = System.Drawing.Color.White;
             this.label10.Location = new System.Drawing.Point(97, 208);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(154, 23);
+            this.label10.Size = new System.Drawing.Size(196, 23);
             this.label10.TabIndex = 30;
-            this.label10.Text = "Change Phone";
+            this.label10.Text = "Change Last Name";
             // 
             // label11
             // 
@@ -189,13 +193,18 @@
             this.label11.ForeColor = System.Drawing.Color.White;
             this.label11.Location = new System.Drawing.Point(97, 136);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(148, 23);
+            this.label11.Size = new System.Drawing.Size(212, 23);
             this.label11.TabIndex = 29;
-            this.label11.Text = "Change Name";
+            this.label11.Text = "Change Firtst Name";
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.panel1.Controls.Add(this.rjButton2);
+            this.panel1.Controls.Add(this.lblPassword);
+            this.panel1.Controls.Add(this.lblFirstName);
+            this.panel1.Controls.Add(this.lblEmail);
+            this.panel1.Controls.Add(this.lblLastName);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label16);
@@ -205,6 +214,102 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(612, 661);
             this.panel1.TabIndex = 24;
+            // 
+            // lblPassword
+            // 
+            this.lblPassword.AutoSize = true;
+            this.lblPassword.BackColor = System.Drawing.Color.Transparent;
+            this.lblPassword.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPassword.ForeColor = System.Drawing.Color.White;
+            this.lblPassword.Location = new System.Drawing.Point(185, 269);
+            this.lblPassword.Name = "lblPassword";
+            this.lblPassword.Size = new System.Drawing.Size(147, 38);
+            this.lblPassword.TabIndex = 39;
+            this.lblPassword.Text = "Password:";
+            // 
+            // lblFirstName
+            // 
+            this.lblFirstName.AutoSize = true;
+            this.lblFirstName.BackColor = System.Drawing.Color.Transparent;
+            this.lblFirstName.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFirstName.ForeColor = System.Drawing.Color.White;
+            this.lblFirstName.Location = new System.Drawing.Point(214, 102);
+            this.lblFirstName.Name = "lblFirstName";
+            this.lblFirstName.Size = new System.Drawing.Size(168, 38);
+            this.lblFirstName.TabIndex = 36;
+            this.lblFirstName.Text = "First Name:";
+            // 
+            // lblEmail
+            // 
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.BackColor = System.Drawing.Color.Transparent;
+            this.lblEmail.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmail.ForeColor = System.Drawing.Color.White;
+            this.lblEmail.Location = new System.Drawing.Point(143, 218);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(97, 38);
+            this.lblEmail.TabIndex = 38;
+            this.lblEmail.Text = "Email:";
+            // 
+            // lblLastName
+            // 
+            this.lblLastName.AutoSize = true;
+            this.lblLastName.BackColor = System.Drawing.Color.Transparent;
+            this.lblLastName.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLastName.ForeColor = System.Drawing.Color.White;
+            this.lblLastName.Location = new System.Drawing.Point(210, 162);
+            this.lblLastName.Name = "lblLastName";
+            this.lblLastName.Size = new System.Drawing.Size(163, 38);
+            this.lblLastName.TabIndex = 37;
+            this.lblLastName.Text = "Last Name:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Black;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label4.Location = new System.Drawing.Point(40, 269);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(139, 38);
+            this.label4.TabIndex = 35;
+            this.label4.Text = "Password";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Black;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label2.Location = new System.Drawing.Point(40, 102);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(168, 38);
+            this.label2.TabIndex = 32;
+            this.label2.Text = "First Name:";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Black;
+            this.label16.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label16.Location = new System.Drawing.Point(40, 220);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(97, 38);
+            this.label16.TabIndex = 34;
+            this.label16.Text = "Email:";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.Black;
+            this.label17.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label17.Location = new System.Drawing.Point(41, 162);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(163, 38);
+            this.label17.TabIndex = 33;
+            this.label17.Text = "Last Name:";
             // 
             // label29
             // 
@@ -219,9 +324,8 @@
             // 
             // panel12
             // 
-            this.panel12.BackColor = System.Drawing.Color.DarkOrange;
+            this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.panel12.Controls.Add(this.label28);
-            this.panel12.Controls.Add(this.label27);
             this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel12.Location = new System.Drawing.Point(0, 0);
             this.panel12.Name = "panel12";
@@ -235,20 +339,9 @@
             this.label28.ForeColor = System.Drawing.Color.White;
             this.label28.Location = new System.Drawing.Point(13, 12);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(100, 38);
+            this.label28.Size = new System.Drawing.Size(118, 38);
             this.label28.TabIndex = 9;
-            this.label28.Text = "Home";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Segoe UI Black", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.White;
-            this.label27.Location = new System.Drawing.Point(1650, 12);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(113, 38);
-            this.label27.TabIndex = 8;
-            this.label27.Text = "Sign in";
+            this.label28.Text = "Setting";
             // 
             // pictureBox1
             // 
@@ -262,53 +355,25 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // label4
+            // rjButton2
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Black;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label4.Location = new System.Drawing.Point(40, 413);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(180, 38);
-            this.label4.TabIndex = 35;
-            this.label4.Text = "PASSWORD:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Black;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label2.Location = new System.Drawing.Point(40, 102);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(109, 38);
-            this.label2.TabIndex = 32;
-            this.label2.Text = "NAME:";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.Color.Black;
-            this.label16.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label16.Location = new System.Drawing.Point(40, 307);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(110, 38);
-            this.label16.TabIndex = 34;
-            this.label16.Text = "EMAIL:";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.Color.Black;
-            this.label17.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label17.Location = new System.Drawing.Point(40, 206);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(121, 38);
-            this.label17.TabIndex = 33;
-            this.label17.Text = "PHONE:";
+            this.rjButton2.BackColor = System.Drawing.Color.Black;
+            this.rjButton2.BackgroundColor = System.Drawing.Color.Black;
+            this.rjButton2.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjButton2.BorderRadius = 15;
+            this.rjButton2.BorderSize = 0;
+            this.rjButton2.FlatAppearance.BorderSize = 0;
+            this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton2.Font = new System.Drawing.Font("Segoe UI Black", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rjButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.rjButton2.Location = new System.Drawing.Point(150, 397);
+            this.rjButton2.Name = "rjButton2";
+            this.rjButton2.Size = new System.Drawing.Size(341, 57);
+            this.rjButton2.TabIndex = 38;
+            this.rjButton2.Text = "Refresh";
+            this.rjButton2.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.rjButton2.UseVisualStyleBackColor = false;
+            this.rjButton2.Click += new System.EventHandler(this.rjButton2_Click);
             // 
             // settings
             // 
@@ -338,16 +403,15 @@
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtChangeEmail;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtChangeLastName;
+        private System.Windows.Forms.TextBox txtChangeFirstName;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtChangePassword;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private RJButton rjButton1;
@@ -355,5 +419,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label lblPassword;
+        private System.Windows.Forms.Label lblFirstName;
+        private System.Windows.Forms.Label lblEmail;
+        private System.Windows.Forms.Label lblLastName;
+        private RJButton rjButton2;
     }
 }

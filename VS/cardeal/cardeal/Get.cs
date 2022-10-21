@@ -16,6 +16,11 @@ namespace cardeal
         {
             InitializeComponent();
         }
+        public Get(string email)
+        {
+            InitializeComponent();
+            lblSignin.Text = email;
+        }
 
 
         private void panelhome_Paint(object sender, PaintEventArgs e)
@@ -25,7 +30,7 @@ namespace cardeal
 
         private void rjButton2_Click(object sender, EventArgs e)
         {
-            CheckOut ck = new CheckOut();
+            CheckOut ck = new CheckOut(1,lblSignin.Text);
             ck.Hide();
             ck.Show();
         }

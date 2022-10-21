@@ -70,7 +70,8 @@
             this.PBox3 = new System.Windows.Forms.PictureBox();
             this.panel12 = new System.Windows.Forms.Panel();
             this.label28 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
+            this.lblSignin = new System.Windows.Forms.Label();
+            this.lblLogOut = new System.Windows.Forms.Label();
             this.panelhome.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -114,7 +115,7 @@
             this.panelhome.Controls.Add(this.panel12);
             this.panelhome.Location = new System.Drawing.Point(0, 0);
             this.panelhome.Name = "panelhome";
-            this.panelhome.Size = new System.Drawing.Size(1781, 1004);
+            this.panelhome.Size = new System.Drawing.Size(1838, 1051);
             this.panelhome.TabIndex = 8;
             // 
             // pictureBox12
@@ -547,8 +548,9 @@
             // panel12
             // 
             this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.panel12.Controls.Add(this.lblLogOut);
             this.panel12.Controls.Add(this.label28);
-            this.panel12.Controls.Add(this.label27);
+            this.panel12.Controls.Add(this.lblSignin);
             this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel12.Location = new System.Drawing.Point(0, 0);
             this.panel12.Name = "panel12";
@@ -566,17 +568,28 @@
             this.label28.TabIndex = 9;
             this.label28.Text = "Home";
             // 
-            // label27
+            // lblSignin
             // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Segoe UI Black", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.White;
-            this.label27.Location = new System.Drawing.Point(1650, 12);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(113, 38);
-            this.label27.TabIndex = 8;
-            this.label27.Text = "Sign in";
-            this.label27.Click += new System.EventHandler(this.label27_Click);
+            this.lblSignin.AutoSize = true;
+            this.lblSignin.Font = new System.Drawing.Font("Segoe UI Black", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSignin.ForeColor = System.Drawing.Color.White;
+            this.lblSignin.Location = new System.Drawing.Point(1650, 12);
+            this.lblSignin.Name = "lblSignin";
+            this.lblSignin.Size = new System.Drawing.Size(113, 38);
+            this.lblSignin.TabIndex = 8;
+            this.lblSignin.Text = "Sign in";
+            this.lblSignin.Click += new System.EventHandler(this.label27_Click);
+            // 
+            // lblLogOut
+            // 
+            this.lblLogOut.AutoSize = true;
+            this.lblLogOut.Font = new System.Drawing.Font("Segoe UI Black", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLogOut.ForeColor = System.Drawing.Color.White;
+            this.lblLogOut.Location = new System.Drawing.Point(1478, 12);
+            this.lblLogOut.Name = "lblLogOut";
+            this.lblLogOut.Size = new System.Drawing.Size(0, 38);
+            this.lblLogOut.TabIndex = 10;
+            this.lblLogOut.Click += new System.EventHandler(this.lblLogOut_Click);
             // 
             // H
             // 
@@ -652,6 +665,7 @@
         private System.Windows.Forms.PictureBox PBox3;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label lblSignin;
+        private System.Windows.Forms.Label lblLogOut;
     }
 }

@@ -18,6 +18,16 @@ namespace cardeal
         {
             InitializeComponent();
         }
+        public Home(string email)
+        {
+            InitializeComponent();
+            if (email == null)
+                lblSignin.Text = "Sign in";
+            else { 
+                lblSignin.Text = email;
+            lblLogOut.Text = "Log out";
+                }
+        }
         public void loadform(object Form)
         {
             if (this.panel3.Controls.Count > 0)
@@ -75,7 +85,7 @@ namespace cardeal
 
         private void label1_Click(object sender, EventArgs e)
         {
-            loadform(new H());
+            loadform(new H(lblSignin.Text));
             indicator.Top = 20;
             
 
@@ -83,7 +93,7 @@ namespace cardeal
 
         private void label3_Click(object sender, EventArgs e)
         {
-            loadform(new Buypanel());
+            loadform(new Buypanel(lblSignin.Text));
             indicator.Top = 80;
             
         }
@@ -101,7 +111,7 @@ namespace cardeal
         }
         private void label19_Click(object sender, EventArgs e)
         {
-            loadform(new settings());
+            loadform(new settings(lblSignin.Text));
             indicator.Top = 580;
         }
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -221,6 +231,16 @@ namespace cardeal
         private void pictureBox13_Click(object sender, EventArgs e)
         {
             sidebarTimer.Start();
+        }
+
+        private void lblLogOut_Click(object sender, EventArgs e)
+        {
+            if (lblLogOut.Text == "Log out")
+            {
+                Home h = new Home();
+                h.Show();
+            }
+                
         }
     }
 }

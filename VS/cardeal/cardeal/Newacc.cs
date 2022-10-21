@@ -22,16 +22,11 @@ namespace cardeal
     
             SqlConnection con = new SqlConnection(@"Data Source=.\SQLEXPRESS; Initial Catalog= CarDataBase;Integrated Security=True");
             string q = "InsertToCustomer";
-            string q1 = "InsertLogin";
             SqlCommand cmd = new SqlCommand(q, con);
             cmd.CommandType=CommandType.StoredProcedure; 
             cmd.Parameters.AddWithValue("@FirstName", firstname);
             cmd.Parameters.AddWithValue("@LastName", lastname);
             cmd.Parameters.AddWithValue("@email", email);
-            SqlCommand cm = new SqlCommand(q1, con);
-            cm.CommandType = CommandType.StoredProcedure;
-            cm.Parameters.AddWithValue("@email", email);
-            cm.Parameters.AddWithValue("@password", password);
             cmd.Parameters.AddWithValue("@password", password);
 
             try
@@ -39,9 +34,9 @@ namespace cardeal
                 con.Open();
                 MessageBox.Show("Succefully connected");
                 cmd.ExecuteNonQuery();
-                cm.ExecuteNonQuery();
                 con.Close();
                 MessageBox.Show(firstname + " ,has been Successfully Registered!!!");
+
                 txtFirstname.Text = "";
                 txtLastname.Text = "";
                 txtEmail.Text = "";

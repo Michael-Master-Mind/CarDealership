@@ -20,7 +20,7 @@ namespace cardeal
         public void add(string model, string manufacturer, int year, double price, int kilometer)
         {
 
-            SqlConnection con = new SqlConnection(@"Data Source=.\SQLSERVER; Initial Catalog= CarDataBase;Integrated Security=True");
+            SqlConnection con = new SqlConnection(@"Data Source=.\SQLEXPRESS; Initial Catalog= CarDataBase;Integrated Security=True");
             string q = "AddCar";
             SqlCommand cmd = new SqlCommand(q, con);
             cmd.CommandType = CommandType.StoredProcedure;

@@ -30,7 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Get1));
             this.panelb = new System.Windows.Forms.Panel();
-            this.rjButton1 = new cardeal.RJButton();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.label18 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -68,11 +70,9 @@
             this.label43 = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
             this.label28 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lblSignin = new System.Windows.Forms.Label();
             this.panelb.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -82,7 +82,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             this.panel12.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.SuspendLayout();
             // 
             // panelb
@@ -92,7 +91,6 @@
             this.panelb.Controls.Add(this.label6);
             this.panelb.Controls.Add(this.label5);
             this.panelb.Controls.Add(this.pictureBox9);
-            this.panelb.Controls.Add(this.rjButton1);
             this.panelb.Controls.Add(this.label18);
             this.panelb.Controls.Add(this.label4);
             this.panelb.Controls.Add(this.panel1);
@@ -117,25 +115,38 @@
             this.panelb.Size = new System.Drawing.Size(1756, 1051);
             this.panelb.TabIndex = 10;
             // 
-            // rjButton1
+            // label6
             // 
-            this.rjButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.rjButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton1.BorderRadius = 20;
-            this.rjButton1.BorderSize = 0;
-            this.rjButton1.FlatAppearance.BorderSize = 0;
-            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(20, 73);
-            this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(161, 44);
-            this.rjButton1.TabIndex = 114;
-            this.rjButton1.Text = "BACK";
-            this.rjButton1.TextColor = System.Drawing.Color.White;
-            this.rjButton1.UseVisualStyleBackColor = false;
-            this.rjButton1.Click += new System.EventHandler(this.rjButton1_Click);
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Red;
+            this.label6.Location = new System.Drawing.Point(1373, 387);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(175, 38);
+            this.label6.TabIndex = 117;
+            this.label6.Text = "Just 500 pcs";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(1104, 384);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(253, 41);
+            this.label5.TabIndex = 116;
+            this.label5.Text = "Limited Edition:";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
+            this.pictureBox9.Location = new System.Drawing.Point(65, 140);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(1015, 470);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox9.TabIndex = 115;
+            this.pictureBox9.TabStop = false;
             // 
             // label18
             // 
@@ -538,9 +549,9 @@
             // 
             // panel12
             // 
-            this.panel12.BackColor = System.Drawing.Color.DarkOrange;
+            this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.panel12.Controls.Add(this.label28);
-            this.panel12.Controls.Add(this.label27);
+            this.panel12.Controls.Add(this.lblSignin);
             this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel12.Location = new System.Drawing.Point(0, 0);
             this.panel12.Name = "panel12";
@@ -558,49 +569,16 @@
             this.label28.TabIndex = 9;
             this.label28.Text = "Buy";
             // 
-            // label27
+            // lblSignin
             // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Segoe UI Black", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.White;
-            this.label27.Location = new System.Drawing.Point(1650, 12);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(113, 38);
-            this.label27.TabIndex = 8;
-            this.label27.Text = "Sign in";
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(65, 140);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(1015, 470);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 115;
-            this.pictureBox9.TabStop = false;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(1104, 384);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(253, 41);
-            this.label5.TabIndex = 116;
-            this.label5.Text = "Limited Edition:";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Red;
-            this.label6.Location = new System.Drawing.Point(1373, 387);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(175, 38);
-            this.label6.TabIndex = 117;
-            this.label6.Text = "Just 500 pcs";
+            this.lblSignin.AutoSize = true;
+            this.lblSignin.Font = new System.Drawing.Font("Segoe UI Black", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSignin.ForeColor = System.Drawing.Color.White;
+            this.lblSignin.Location = new System.Drawing.Point(1650, 12);
+            this.lblSignin.Name = "lblSignin";
+            this.lblSignin.Size = new System.Drawing.Size(113, 38);
+            this.lblSignin.TabIndex = 8;
+            this.lblSignin.Text = "Sign in";
             // 
             // Get1
             // 
@@ -614,6 +592,7 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panelb.ResumeLayout(false);
             this.panelb.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -625,7 +604,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -633,7 +611,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panelb;
-        private RJButton rjButton1;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel1;
@@ -671,7 +648,7 @@
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label lblSignin;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;

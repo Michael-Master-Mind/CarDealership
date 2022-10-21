@@ -18,6 +18,42 @@ namespace cardeal
             InitializeComponent();
 
         }
+        public void searchAgent(string name,string location)
+        {
+            SqlConnection con = new SqlConnection(@"Data Source=.\SQLEXPRESS; Initial Catalog= CarDataBase;Integrated Security=True");
+            string q = "SearchAgent";
+            SqlCommand cmd = new SqlCommand(q, con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@name", name);
+            cmd.Parameters.AddWithValue("@location", location);
+            try
+            {
+                con.Open();
+                MessageBox.Show("Succefully connected");
+                cmd.ExecuteNonQuery();
+                SqlDataReader sdr = cmd.ExecuteReader();
+                int r = 0;
+                while (sdr.Read())
+                {
+                    AgentInfo si = new AgentInfo();
+                    si.Name = sdr["name"].ToString();
+                    si.Location = sdr["Location"].ToString();
+                    si.Phone = sdr["phone"].ToString();
+                    si.Email = sdr["email"].ToString();
+
+                    panel4.Controls.Add(si);
+
+                    r++;
+                }
+                con.Close();
+                
+            }
+            catch (SqlException se)
+            {
+                MessageBox.Show(se.Message);
+            }
+
+        }
         public void submit(string name, int phone, string email, string message)
         {
 
@@ -56,6 +92,11 @@ namespace cardeal
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void rjButton1_Click(object sender, EventArgs e)
+        {
+            searchAgent(lblName.Text, cmbLocation.SelectedItem.ToString());
         }
     }
 }

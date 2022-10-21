@@ -117,6 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>Terms and conditions of use
+Welcome to our digital information network. These are our terms and
+conditions for use of the network, which you may access in several ways,
+including but not limited to the World Wide Web via theguardian.com,
+digital television, PDA, mobile phone and RSS feeds. In these terms and
+conditions, when we say the "Guardian Site" we mean the digital
+information network operated by or on behalf of Guardian News &amp; Media
+Limited or its parent companies, subsidiaries and affiliates (collectively
+"Guardian"), regardless of how you access the network, as well as any
+Guardian apps whether you access those via a Guardian Site or a third party
+site. However you access the Guardian Site, you agree to be bound by these
+terms and conditions. If you have accessed the Guardian Site from the United
+States or Australia, you also agree to be bound by additional terms contained
+at the end of these terms and conditions.</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

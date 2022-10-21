@@ -73,6 +73,12 @@
     <Compile Include="Agent.Designer.cs">
       <DependentUpon>Agent.cs</DependentUpon>
     </Compile>
+    <Compile Include="AgentInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AgentInfo.Designer.cs">
+      <DependentUpon>AgentInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Aglogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +90,12 @@
     </Compile>
     <Compile Include="Buy.Designer.cs">
       <DependentUpon>Buy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CarInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CarInfo.Designer.cs">
+      <DependentUpon>CarInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="CheckOut.cs">
       <SubType>Form</SubType>
@@ -186,11 +198,17 @@
     <EmbeddedResource Include="Agent.resx">
       <DependentUpon>Agent.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AgentInfo.resx">
+      <DependentUpon>AgentInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Aglogin.resx">
       <DependentUpon>Aglogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Buy.resx">
       <DependentUpon>Buy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CarInfo.resx">
+      <DependentUpon>CarInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CheckOut.resx">
       <DependentUpon>CheckOut.cs</DependentUpon>

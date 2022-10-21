@@ -16,7 +16,12 @@ namespace cardeal
         {
             InitializeComponent();
         }
-        
+        public Buypanel(string email)
+        {
+            InitializeComponent();
+            lblSignin.Text = email;
+        }
+
         private void panelhome_Paint(object sender, PaintEventArgs e)
         {
 
@@ -49,7 +54,7 @@ namespace cardeal
 
         private void G2_Click(object sender, EventArgs e)
         {
-            Get g = new Get();
+            Get g = new Get(lblSignin.Text);
             g.TopLevel = false;
             panelhome.Controls.Add(g);
             g.BringToFront();
@@ -58,7 +63,7 @@ namespace cardeal
 
         private void lamboGet_Click(object sender, EventArgs e)
         {
-            Get1 g = new Get1();
+            Get1 g = new Get1(lblSignin.Text);
             g.TopLevel = false;
             panelhome.Controls.Add(g);
             g.BringToFront();
@@ -67,7 +72,7 @@ namespace cardeal
 
         private void f488Get_Click(object sender, EventArgs e)
         {
-            Get2 g = new Get2();
+            Get2 g = new Get2(lblSignin.Text);
             g.TopLevel = false;
             panelhome.Controls.Add(g);
             g.BringToFront();

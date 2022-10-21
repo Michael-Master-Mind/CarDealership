@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.rjButton1 = new cardeal.RJButton();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -53,20 +53,21 @@
             this.rjButton1.Text = "Sign in";
             this.rjButton1.TextColor = System.Drawing.Color.White;
             this.rjButton1.UseVisualStyleBackColor = false;
+            this.rjButton1.Click += new System.EventHandler(this.rjButton1_Click);
             // 
-            // textBox2
+            // txtPassword
             // 
-            this.textBox2.Location = new System.Drawing.Point(27, 201);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(374, 22);
-            this.textBox2.TabIndex = 18;
+            this.txtPassword.Location = new System.Drawing.Point(27, 201);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(374, 22);
+            this.txtPassword.TabIndex = 18;
             // 
-            // textBox1
+            // txtEmail
             // 
-            this.textBox1.Location = new System.Drawing.Point(27, 113);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(374, 22);
-            this.textBox1.TabIndex = 17;
+            this.txtEmail.Location = new System.Drawing.Point(27, 113);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(374, 22);
+            this.txtEmail.TabIndex = 17;
             // 
             // label4
             // 
@@ -98,8 +99,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(500, 538);
             this.Controls.Add(this.rjButton1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -113,8 +114,8 @@
         #endregion
 
         private RJButton rjButton1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
     }

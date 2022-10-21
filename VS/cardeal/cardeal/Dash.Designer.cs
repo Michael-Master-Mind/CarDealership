@@ -29,23 +29,29 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
-            this.rjButton1 = new cardeal.RJButton();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgv = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblLastest = new System.Windows.Forms.Label();
+            this.lblOldest = new System.Windows.Forms.Label();
+            this.lblCheapest = new System.Windows.Forms.Label();
+            this.lblExpensive = new System.Windows.Forms.Label();
+            this.lblTotalCount = new System.Windows.Forms.Label();
+            this.labelT = new System.Windows.Forms.Label();
+            this.labell = new System.Windows.Forms.Label();
+            this.labelE = new System.Windows.Forms.Label();
+            this.labelo = new System.Windows.Forms.Label();
+            this.labelc = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblPurhcases = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel2.Controls.Add(this.rjButton1);
-            this.panel2.Controls.Add(this.dataGridView1);
+            this.panel2.Controls.Add(this.dgv);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
@@ -53,90 +59,167 @@
             this.panel2.Size = new System.Drawing.Size(1423, 760);
             this.panel2.TabIndex = 31;
             // 
-            // rjButton1
+            // dgv
             // 
-            this.rjButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.rjButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton1.BorderRadius = 20;
-            this.rjButton1.BorderSize = 0;
-            this.rjButton1.FlatAppearance.BorderSize = 0;
-            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(1144, 685);
-            this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(250, 52);
-            this.rjButton1.TabIndex = 31;
-            this.rjButton1.Text = "Display";
-            this.rjButton1.TextColor = System.Drawing.Color.White;
-            this.rjButton1.UseVisualStyleBackColor = false;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(666, 25);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(746, 575);
-            this.dataGridView1.TabIndex = 29;
+            this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv.Location = new System.Drawing.Point(666, 25);
+            this.dgv.Name = "dgv";
+            this.dgv.RowHeadersWidth = 51;
+            this.dgv.RowTemplate.Height = 24;
+            this.dgv.Size = new System.Drawing.Size(746, 575);
+            this.dgv.TabIndex = 29;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Black;
-            this.panel3.Controls.Add(this.label4);
+            this.panel3.Controls.Add(this.lblPurhcases);
             this.panel3.Controls.Add(this.label1);
-            this.panel3.Controls.Add(this.label3);
-            this.panel3.Controls.Add(this.label2);
+            this.panel3.Controls.Add(this.lblLastest);
+            this.panel3.Controls.Add(this.lblOldest);
+            this.panel3.Controls.Add(this.lblCheapest);
+            this.panel3.Controls.Add(this.lblExpensive);
+            this.panel3.Controls.Add(this.lblTotalCount);
+            this.panel3.Controls.Add(this.labelT);
+            this.panel3.Controls.Add(this.labell);
+            this.panel3.Controls.Add(this.labelE);
+            this.panel3.Controls.Add(this.labelo);
+            this.panel3.Controls.Add(this.labelc);
             this.panel3.Location = new System.Drawing.Point(13, 25);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(652, 575);
             this.panel3.TabIndex = 30;
             // 
-            // label4
+            // lblLastest
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label4.Location = new System.Drawing.Point(18, 342);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(121, 38);
-            this.label4.TabIndex = 27;
-            this.label4.Text = "LATEST:";
+            this.lblLastest.AutoSize = true;
+            this.lblLastest.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLastest.ForeColor = System.Drawing.Color.White;
+            this.lblLastest.Location = new System.Drawing.Point(189, 335);
+            this.lblLastest.Name = "lblLastest";
+            this.lblLastest.Size = new System.Drawing.Size(103, 38);
+            this.lblLastest.TabIndex = 33;
+            this.lblLastest.Text = "Latest:";
+            // 
+            // lblOldest
+            // 
+            this.lblOldest.AutoSize = true;
+            this.lblOldest.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOldest.ForeColor = System.Drawing.Color.White;
+            this.lblOldest.Location = new System.Drawing.Point(195, 282);
+            this.lblOldest.Name = "lblOldest";
+            this.lblOldest.Size = new System.Drawing.Size(109, 38);
+            this.lblOldest.TabIndex = 32;
+            this.lblOldest.Text = "Oldest:";
+            // 
+            // lblCheapest
+            // 
+            this.lblCheapest.AutoSize = true;
+            this.lblCheapest.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCheapest.ForeColor = System.Drawing.Color.White;
+            this.lblCheapest.Location = new System.Drawing.Point(230, 231);
+            this.lblCheapest.Name = "lblCheapest";
+            this.lblCheapest.Size = new System.Drawing.Size(144, 38);
+            this.lblCheapest.TabIndex = 31;
+            this.lblCheapest.Text = "Cheapest:";
+            // 
+            // lblExpensive
+            // 
+            this.lblExpensive.AutoSize = true;
+            this.lblExpensive.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblExpensive.ForeColor = System.Drawing.Color.White;
+            this.lblExpensive.Location = new System.Drawing.Point(315, 182);
+            this.lblExpensive.Name = "lblExpensive";
+            this.lblExpensive.Size = new System.Drawing.Size(229, 38);
+            this.lblExpensive.TabIndex = 30;
+            this.lblExpensive.Text = "Most Expensive:";
+            // 
+            // lblTotalCount
+            // 
+            this.lblTotalCount.AutoSize = true;
+            this.lblTotalCount.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalCount.ForeColor = System.Drawing.Color.White;
+            this.lblTotalCount.Location = new System.Drawing.Point(262, 135);
+            this.lblTotalCount.Name = "lblTotalCount";
+            this.lblTotalCount.Size = new System.Drawing.Size(176, 38);
+            this.lblTotalCount.TabIndex = 29;
+            this.lblTotalCount.Text = "Total Count:";
+            // 
+            // labelT
+            // 
+            this.labelT.AutoSize = true;
+            this.labelT.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.labelT.Location = new System.Drawing.Point(80, 135);
+            this.labelT.Name = "labelT";
+            this.labelT.Size = new System.Drawing.Size(176, 38);
+            this.labelT.TabIndex = 28;
+            this.labelT.Text = "Total Count:";
+            // 
+            // labell
+            // 
+            this.labell.AutoSize = true;
+            this.labell.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labell.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.labell.Location = new System.Drawing.Point(80, 335);
+            this.labell.Name = "labell";
+            this.labell.Size = new System.Drawing.Size(103, 38);
+            this.labell.TabIndex = 27;
+            this.labell.Text = "Latest:";
+            // 
+            // labelE
+            // 
+            this.labelE.AutoSize = true;
+            this.labelE.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelE.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.labelE.Location = new System.Drawing.Point(80, 182);
+            this.labelE.Name = "labelE";
+            this.labelE.Size = new System.Drawing.Size(229, 38);
+            this.labelE.TabIndex = 24;
+            this.labelE.Text = "Most Expensive:";
+            // 
+            // labelo
+            // 
+            this.labelo.AutoSize = true;
+            this.labelo.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.labelo.Location = new System.Drawing.Point(80, 282);
+            this.labelo.Name = "labelo";
+            this.labelo.Size = new System.Drawing.Size(109, 38);
+            this.labelo.TabIndex = 26;
+            this.labelo.Text = "Oldest:";
+            // 
+            // labelc
+            // 
+            this.labelc.AutoSize = true;
+            this.labelc.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.labelc.Location = new System.Drawing.Point(80, 231);
+            this.labelc.Name = "labelc";
+            this.labelc.Size = new System.Drawing.Size(144, 38);
+            this.labelc.TabIndex = 25;
+            this.labelc.Text = "Cheapest:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(18, 31);
+            this.label1.Location = new System.Drawing.Point(80, 384);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(252, 38);
-            this.label1.TabIndex = 24;
-            this.label1.Text = "EXPENCIVE CARS:";
+            this.label1.Size = new System.Drawing.Size(154, 38);
+            this.label1.TabIndex = 34;
+            this.label1.Text = "Purchases:";
             // 
-            // label3
+            // lblPurhcases
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label3.Location = new System.Drawing.Point(18, 236);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(207, 38);
-            this.label3.TabIndex = 26;
-            this.label3.Text = "OLDEST CARS:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label2.Location = new System.Drawing.Point(18, 135);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(241, 38);
-            this.label2.TabIndex = 25;
-            this.label2.Text = "CHEAPEST CARS:";
+            this.lblPurhcases.AutoSize = true;
+            this.lblPurhcases.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPurhcases.ForeColor = System.Drawing.Color.White;
+            this.lblPurhcases.Location = new System.Drawing.Point(240, 384);
+            this.lblPurhcases.Name = "lblPurhcases";
+            this.lblPurhcases.Size = new System.Drawing.Size(146, 38);
+            this.lblPurhcases.TabIndex = 35;
+            this.lblPurhcases.Text = "Purchases";
             // 
             // Dash
             // 
@@ -148,7 +231,7 @@
             this.Name = "Dash";
             this.Text = "Dash";
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.ResumeLayout(false);
@@ -158,12 +241,19 @@
         #endregion
 
         private System.Windows.Forms.Panel panel2;
-        private RJButton rjButton1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgv;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label labell;
+        private System.Windows.Forms.Label labelE;
+        private System.Windows.Forms.Label labelo;
+        private System.Windows.Forms.Label labelc;
+        private System.Windows.Forms.Label lblLastest;
+        private System.Windows.Forms.Label lblOldest;
+        private System.Windows.Forms.Label lblCheapest;
+        private System.Windows.Forms.Label lblExpensive;
+        private System.Windows.Forms.Label lblTotalCount;
+        private System.Windows.Forms.Label labelT;
+        private System.Windows.Forms.Label lblPurhcases;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
     }
 }

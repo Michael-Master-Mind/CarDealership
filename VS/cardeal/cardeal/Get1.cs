@@ -16,8 +16,14 @@ namespace cardeal
         {
             InitializeComponent();
         }
+        public Get1(string email)
+        {
+            InitializeComponent();
+            lblSignin.Text = email;
+        }
 
-        private void label5_Click(object sender, EventArgs e)
+
+            private void label5_Click(object sender, EventArgs e)
         {
 
         }
@@ -33,7 +39,7 @@ namespace cardeal
 
         private void rjButton2_Click(object sender, EventArgs e)
         {
-            CheckOut ck = new CheckOut();
+            CheckOut ck = new CheckOut(2,lblSignin.Text);
             ck.Hide();
             ck.Show();
         }

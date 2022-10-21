@@ -68,8 +68,7 @@
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.panel12 = new System.Windows.Forms.Panel();
             this.label28 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.rjButton1 = new cardeal.RJButton();
+            this.lblSignin = new System.Windows.Forms.Label();
             this.panelb.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -87,7 +86,6 @@
             // 
             this.panelb.AutoScroll = true;
             this.panelb.BackColor = System.Drawing.Color.Black;
-            this.panelb.Controls.Add(this.rjButton1);
             this.panelb.Controls.Add(this.label18);
             this.panelb.Controls.Add(this.label4);
             this.panelb.Controls.Add(this.panel1);
@@ -525,9 +523,9 @@
             // 
             // panel12
             // 
-            this.panel12.BackColor = System.Drawing.Color.DarkOrange;
+            this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.panel12.Controls.Add(this.label28);
-            this.panel12.Controls.Add(this.label27);
+            this.panel12.Controls.Add(this.lblSignin);
             this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel12.Location = new System.Drawing.Point(0, 0);
             this.panel12.Name = "panel12";
@@ -545,36 +543,16 @@
             this.label28.TabIndex = 9;
             this.label28.Text = "Buy";
             // 
-            // label27
+            // lblSignin
             // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Segoe UI Black", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.White;
-            this.label27.Location = new System.Drawing.Point(1650, 12);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(113, 38);
-            this.label27.TabIndex = 8;
-            this.label27.Text = "Sign in";
-            // 
-            // rjButton1
-            // 
-            this.rjButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.rjButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton1.BorderRadius = 20;
-            this.rjButton1.BorderSize = 0;
-            this.rjButton1.FlatAppearance.BorderSize = 0;
-            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(20, 73);
-            this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(161, 44);
-            this.rjButton1.TabIndex = 114;
-            this.rjButton1.Text = "BACK";
-            this.rjButton1.TextColor = System.Drawing.Color.White;
-            this.rjButton1.UseVisualStyleBackColor = false;
-            this.rjButton1.Click += new System.EventHandler(this.rjButton1_Click);
+            this.lblSignin.AutoSize = true;
+            this.lblSignin.Font = new System.Drawing.Font("Segoe UI Black", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSignin.ForeColor = System.Drawing.Color.White;
+            this.lblSignin.Location = new System.Drawing.Point(1650, 12);
+            this.lblSignin.Name = "lblSignin";
+            this.lblSignin.Size = new System.Drawing.Size(113, 38);
+            this.lblSignin.TabIndex = 8;
+            this.lblSignin.Text = "Sign in";
             // 
             // Get
             // 
@@ -635,7 +613,7 @@
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label lblSignin;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
@@ -646,6 +624,5 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label18;
-        private RJButton rjButton1;
     }
 }
