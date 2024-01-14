@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7D6C38CB-F8F7-48E9-8BBB-1AB5C4C34DD8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>cardeal</RootNamespace>
+    <AssemblyName>cardeal</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.WinForms, Version=0.9.7.1, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.WinForms.0.9.7.1\lib\net45\LiveCharts.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddCars.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCars.Designer.cs">
+      <DependentUpon>AddCars.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Agent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agent.Designer.cs">
+      <DependentUpon>Agent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgentInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AgentInfo.Designer.cs">
+      <DependentUpon>AgentInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Aglogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aglogin.Designer.cs">
+      <DependentUpon>Aglogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Buy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Buy.Designer.cs">
+      <DependentUpon>Buy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CarInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CarInfo.Designer.cs">
+      <DependentUpon>CarInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckOut.Designer.cs">
+      <DependentUpon>CheckOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dash.Designer.cs">
+      <DependentUpon>Dash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Get.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Get.Designer.cs">
+      <DependentUpon>Get.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Get1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Get1.Designer.cs">
+      <DependentUpon>Get1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Get2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Get2.Designer.cs">
+      <DependentUpon>Get2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="H.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="H.Designer.cs">
+      <DependentUpon>H.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Newacc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Newacc.Designer.cs">
+      <DependentUpon>Newacc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RemoveCars.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoveCars.Designer.cs">
+      <DependentUpon>RemoveCars.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sell.Designer.cs">
+      <DependentUpon>Sell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SellerInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SellerInfo.Designer.cs">
+      <DependentUpon>SellerInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sellers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sellers.Designer.cs">
+      <DependentUpon>Sellers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="settings.Designer.cs">
+      <DependentUpon>settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sign.Designer.cs">
+      <DependentUpon>sign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RJButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="signin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="signin.Designer.cs">
+      <DependentUpon>signin.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddCars.resx">
+      <DependentUpon>AddCars.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Agent.resx">
+      <DependentUpon>Agent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgentInfo.resx">
+      <DependentUpon>AgentInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Aglogin.resx">
+      <DependentUpon>Aglogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Buy.resx">
+      <DependentUpon>Buy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CarInfo.resx">
+      <DependentUpon>CarInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckOut.resx">
+      <DependentUpon>CheckOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dash.resx">
+      <DependentUpon>Dash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Get.resx">
+      <DependentUpon>Get.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Get1.resx">
+      <DependentUpon>Get1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Get2.resx">
+      <DependentUpon>Get2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="H.resx">
+      <DependentUpon>H.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Newacc.resx">
+      <DependentUpon>Newacc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemoveCars.resx">
+      <DependentUpon>RemoveCars.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sell.resx">
+      <DependentUpon>Sell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SellerInfo.resx">
+      <DependentUpon>SellerInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sellers.resx">
+      <DependentUpon>Sellers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="settings.resx">
+      <DependentUpon>settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sign.resx">
+      <DependentUpon>sign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="signin.resx">
+      <DependentUpon>signin.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\Revenue.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
